@@ -1,0 +1,9 @@
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+pyarrow==24.0.0
+xgboost==3.4.1
+hmmlearn==0.3.3
+shap==0.52.0
+pytest==9.1.1

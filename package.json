@@ -1,0 +1,1 @@
+{"name":"snp-relative-value","private":true,"scripts":{"dev":"npm --prefix dashboard run dev","build":"npm --prefix dashboard run build","start":"npm --prefix dashboard run start","test:ui":"npm --prefix dashboard run test:ui"}}

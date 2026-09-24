@@ -1,0 +1,51 @@
+{
+  "checks": [
+    {
+      "page": "Overview",
+      "heading": "A view of relative value.",
+      "charts": 7
+    },
+    {
+      "page": "Test explorer",
+      "heading": "The whole smile. Every signal.",
+      "charts": 2
+    },
+    {
+      "page": "Option inspector",
+      "heading": "Inside the prediction.",
+      "charts": 2
+    },
+    {
+      "page": "Volatility regimes",
+      "heading": "The volatility environment.",
+      "charts": 6
+    },
+    {
+      "page": "Model quality",
+      "heading": "Evidence before conviction.",
+      "charts": 5
+    },
+    {
+      "page": "Feature research",
+      "heading": "What the model actually uses.",
+      "charts": 9
+    },
+    {
+      "page": "OTM put diagnostics",
+      "heading": "High IV is not a verdict.",
+      "charts": 7
+    },
+    {
+      "page": "Relative-value scanner",
+      "heading": "Find the disagreement.",
+      "charts": 1
+    },
+    {
+      "page": "Data quality",
+      "heading": "Nothing hidden in the cleaning.",
+      "charts": 5
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

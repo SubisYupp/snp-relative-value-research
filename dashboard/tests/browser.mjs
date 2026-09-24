@@ -1,0 +1,46 @@
+import { chromium, expect } from '@playwright/test';
+import fs from 'node:fs';
+import path from 'node:path';
+const root=path.resolve('..');
+const edge='C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
+const browser=await chromium.launch(fs.existsSync(edge)?{executablePath:edge,headless:true}:{headless:true});
+const page=await browser.newPage({viewport:{width:1536,height:1000},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});
+page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()} ${r.url()}`)});
+fs.mkdirSync(path.join(root,'reports/screenshots'),{recursive:true});
+await page.goto('http://127.0.0.1:3000',{waitUntil:'networkidle'});
+await page.getByRole('heading',{name:'A view of relative value.'}).waitFor();
+const summary=await (await page.request.get('http://127.0.0.1:3000/data/summary.json')).json();
+await expect(page.locator('.header-right')).toContainText(summary.lock.config.version);
+if(summary.lock.historical_reevaluation)await expect(page.getByText(summary.lock.evaluation_status,{exact:true}).first()).toBeVisible();
+const names=['Overview','Test explorer','Option inspector','Volatility regimes','Model quality','Feature research','OTM put diagnostics','Relative-value scanner','Data quality'];
+const checks=[];
+for(let i=0;i<names.length;i++){
+ await page.getByRole('button',{name:names[i],exact:true}).click();
+ await page.waitForLoadState('networkidle');
+ await page.locator('main h1').waitFor();
+ await page.waitForFunction(()=>document.querySelectorAll('canvas').length>0);
+ await page.screenshot({path:path.join(root,`reports/screenshots/${i}-${names[i].replaceAll(' ','-')}.png`),fullPage:i===0});
+ checks.push({page:names[i],heading:await page.locator('main h1').textContent(),charts:await page.locator('canvas').count()});
+}
+await page.getByRole('button',{name:'Test explorer',exact:true}).click();
+await page.waitForLoadState('networkidle');
+await page.locator('tbody tr').first().click();
+await page.getByRole('heading',{name:'Inside the prediction.'}).waitFor();
+if(!await page.locator('.signal').isVisible())throw Error('Option selection failed');
+await page.getByRole('button',{name:'Test explorer',exact:true}).click();
+const timestamp=page.getByLabel('Observation',{exact:true});
+await timestamp.selectOption({index:1});await page.waitForLoadState('networkidle');
+await page.getByLabel('Type',{exact:true}).selectOption('C');
+await page.getByLabel('Max DTE',{exact:true}).fill('90');
+await page.locator('tbody tr').first().waitFor({timeout:10000}).catch(async e=>{await page.screenshot({path:path.join(root,'reports/screenshots/filter-debug.png'),fullPage:true});throw e;});
+await page.getByRole('button',{name:'Relative-value scanner',exact:true}).click();await page.waitForLoadState('networkidle');
+if(await page.locator('tbody tr').count()){await page.locator('tbody tr').first().click();await page.waitForLoadState('networkidle');await expect(page.getByLabel('Expiry',{exact:true})).not.toHaveValue('',{timeout:10000});}
+await page.setViewportSize({width:768,height:1024});await page.screenshot({path:path.join(root,'reports/screenshots/tablet.png')});
+await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Overview',exact:true}).click();await page.screenshot({path:path.join(root,'reports/screenshots/mobile.png'),fullPage:true});
+const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth+2);
+if(overflow)errors.push('Mobile viewport overflows');
+fs.writeFileSync(path.join(root,'reports/browser_checks.json'),JSON.stringify({checks,errors,passed:errors.length===0},null,2));
+await browser.close();
+if(errors.length)throw Error(errors.join('\n'));
+console.log(`Verified ${checks.length} pages, explorer navigation, filters, candidate selection and responsive layout.`);

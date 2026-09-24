@@ -1,0 +1,17 @@
+{
+  "provider": "Vercel",
+  "audience": "public",
+  "public_data_authorized": true,
+  "package": "deploy/vercel",
+  "status": "deployed",
+  "production_build_passed": true,
+  "browser_views_verified": 9,
+  "lossless_data_roundtrip_verified": true,
+  "source_upload_bytes": 95046115,
+  "packed_data_bytes": 92620130,
+  "model_sha256": "b93bb44d44c2050c6ec35ce5196724a731dd0d64d82ee2ef01feb9a5a3014beb",
+  "local_deployment_preview": "http://127.0.0.1:3001",
+  "live_url": "https://vercel-peach-ten-50.vercel.app",
+  "deployment_id": "dpl_By7qn8HoaARtWEFMGeU3oYLFTGKh",
+  "live_browser_views_verified": 9
+}

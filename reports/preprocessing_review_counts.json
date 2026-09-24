@@ -1,0 +1,65 @@
+{
+  "source_counts": {
+    "raw_rows": 4177774,
+    "exact_duplicate_wide_rows": 13199,
+    "filename_date_mismatch": 0,
+    "expired_positive_source_dte": 0,
+    "rate_nonzero": 0,
+    "timestamp_with_mixed_underlyings": 0,
+    "call_negative_gamma": 0,
+    "call_positive_theta": 0,
+    "call_iv_above_3_unexpired": 0,
+    "put_negative_gamma": 0,
+    "put_positive_theta": 0,
+    "put_iv_above_3_unexpired": 0,
+    "negative_expected_iv": 4,
+    "nonfinite_feature_values": 0,
+    "negative_forward_variance": 91736
+  },
+  "high_iv_examples": [],
+  "pre_validation_target_by_vega_including_warmup": [
+    {
+      "vega_bucket": "(0.0, 0.1]",
+      "n": 36373,
+      "mean_absolute_target": 7.350475311279297,
+      "squared_error_sum": 48691340.0,
+      "max_abs_target": 1347.782470703125
+    },
+    {
+      "vega_bucket": "(0.1, 0.5]",
+      "n": 160018,
+      "mean_absolute_target": 3.450547456741333,
+      "squared_error_sum": 20741462.0,
+      "max_abs_target": 615.7702026367188
+    },
+    {
+      "vega_bucket": "(0.5, 1.0]",
+      "n": 198442,
+      "mean_absolute_target": 1.8804891109466553,
+      "squared_error_sum": 4561482.5,
+      "max_abs_target": 136.17698669433594
+    },
+    {
+      "vega_bucket": "(1.0, 3.0]",
+      "n": 943993,
+      "mean_absolute_target": 0.768962562084198,
+      "squared_error_sum": 3094747.0,
+      "max_abs_target": 78.81153869628906
+    },
+    {
+      "vega_bucket": "(3.0, 10.0]",
+      "n": 3258793,
+      "mean_absolute_target": 0.2935153841972351,
+      "squared_error_sum": 4624828.5,
+      "max_abs_target": 1340.5052490234375
+    },
+    {
+      "vega_bucket": "(10.0, inf]",
+      "n": 1735618,
+      "mean_absolute_target": 0.10848695039749146,
+      "squared_error_sum": 156587.5625,
+      "max_abs_target": 55.6599006652832
+    }
+  ],
+  "scope_note": "Initial broad source audit. Use training_vega_sensitivity.csv for the exact supervised-training window."
+}

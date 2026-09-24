@@ -1,0 +1,1691 @@
+{
+  "files": 324,
+  "raw_rows": 4177774,
+  "start": "2025-06-05 09:00:00",
+  "end": "2026-09-22 16:00:00",
+  "missing_pct": {
+    "time": 0.0,
+    "contract": 0.0,
+    "expiry": 0.0,
+    "strike": 0.0,
+    "underlying": 0.0,
+    "rate": 0.0,
+    "call_price": 0.0,
+    "put_price": 0.0038297906971511623,
+    "atm": 0.0,
+    "call_iv": 0.0,
+    "put_iv": 0.0038297906971511623,
+    "call_delta": 0.0,
+    "call_gamma": 0.0,
+    "call_vega": 0.0,
+    "call_theta": 0.0,
+    "put_delta": 0.0038297906971511623,
+    "put_gamma": 0.0038297906971511623,
+    "put_vega": 0.0038297906971511623,
+    "put_theta": 0.0038297906971511623,
+    "dte": 0.0,
+    "straddle_delta": 0.0038297906971511623
+  },
+  "months": {
+    "2025-06": 211424,
+    "2025-07": 271135,
+    "2025-08": 271768,
+    "2025-09": 271672,
+    "2025-10": 304176,
+    "2025-11": 251735,
+    "2025-12": 277441,
+    "2026-01": 263040,
+    "2026-02": 253856,
+    "2026-03": 298352,
+    "2026-04": 274560,
+    "2026-05": 259072,
+    "2026-06": 241248,
+    "2026-07": 307282,
+    "2026-08": 245021,
+    "2026-09": 175992
+  },
+  "hours": {
+    "9": 525966,
+    "10": 520769,
+    "11": 519200,
+    "12": 520697,
+    "13": 520700,
+    "14": 524443,
+    "15": 524465,
+    "16": 521534
+  },
+  "expiry_count": 370,
+  "expired_rows": 98589,
+  "timestamp_gap_minutes": {
+    "60.0": 2229,
+    "120.0": 2,
+    "240.0": 1,
+    "300.0": 3
+  },
+  "put_delta_signs": [
+    {
+      "file": "2025-06-05.parquet",
+      "positive_put_delta": 12875,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-06.parquet",
+      "positive_put_delta": 12509,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-09.parquet",
+      "positive_put_delta": 12528,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-10.parquet",
+      "positive_put_delta": 12290,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-11.parquet",
+      "positive_put_delta": 12610,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-12.parquet",
+      "positive_put_delta": 12247,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-13.parquet",
+      "positive_put_delta": 12518,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-16.parquet",
+      "positive_put_delta": 12262,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-17.parquet",
+      "positive_put_delta": 12270,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-18.parquet",
+      "positive_put_delta": 12276,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-20.parquet",
+      "positive_put_delta": 12653,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-23.parquet",
+      "positive_put_delta": 12095,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-24.parquet",
+      "positive_put_delta": 11778,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-25.parquet",
+      "positive_put_delta": 12283,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-26.parquet",
+      "positive_put_delta": 11826,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-27.parquet",
+      "positive_put_delta": 12443,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-06-30.parquet",
+      "positive_put_delta": 12313,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-01.parquet",
+      "positive_put_delta": 12518,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-02.parquet",
+      "positive_put_delta": 12082,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-03.parquet",
+      "positive_put_delta": 7440,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-07.parquet",
+      "positive_put_delta": 12136,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-08.parquet",
+      "positive_put_delta": 12231,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-09.parquet",
+      "positive_put_delta": 12386,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-10.parquet",
+      "positive_put_delta": 12357,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-11.parquet",
+      "positive_put_delta": 12736,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-14.parquet",
+      "positive_put_delta": 12504,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-15.parquet",
+      "positive_put_delta": 12484,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-16.parquet",
+      "positive_put_delta": 12545,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-17.parquet",
+      "positive_put_delta": 12371,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-18.parquet",
+      "positive_put_delta": 12624,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-21.parquet",
+      "positive_put_delta": 12490,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-22.parquet",
+      "positive_put_delta": 12510,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-23.parquet",
+      "positive_put_delta": 12278,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-24.parquet",
+      "positive_put_delta": 12516,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-25.parquet",
+      "positive_put_delta": 12389,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-28.parquet",
+      "positive_put_delta": 12555,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-29.parquet",
+      "positive_put_delta": 12714,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-30.parquet",
+      "positive_put_delta": 12642,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-07-31.parquet",
+      "positive_put_delta": 12782,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-01.parquet",
+      "positive_put_delta": 13158,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-04.parquet",
+      "positive_put_delta": 13170,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-05.parquet",
+      "positive_put_delta": 13142,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-06.parquet",
+      "positive_put_delta": 13020,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-07.parquet",
+      "positive_put_delta": 12910,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-08.parquet",
+      "positive_put_delta": 12522,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-11.parquet",
+      "positive_put_delta": 13017,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-12.parquet",
+      "positive_put_delta": 12397,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-13.parquet",
+      "positive_put_delta": 12734,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-14.parquet",
+      "positive_put_delta": 13062,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-15.parquet",
+      "positive_put_delta": 13083,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-18.parquet",
+      "positive_put_delta": 12840,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-19.parquet",
+      "positive_put_delta": 12824,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-20.parquet",
+      "positive_put_delta": 13003,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-21.parquet",
+      "positive_put_delta": 13210,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-22.parquet",
+      "positive_put_delta": 12582,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-25.parquet",
+      "positive_put_delta": 12911,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-26.parquet",
+      "positive_put_delta": 12665,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-27.parquet",
+      "positive_put_delta": 12613,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-28.parquet",
+      "positive_put_delta": 12475,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-08-29.parquet",
+      "positive_put_delta": 12707,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-02.parquet",
+      "positive_put_delta": 12873,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-03.parquet",
+      "positive_put_delta": 13001,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-04.parquet",
+      "positive_put_delta": 12706,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-05.parquet",
+      "positive_put_delta": 12987,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-08.parquet",
+      "positive_put_delta": 12892,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-09.parquet",
+      "positive_put_delta": 12573,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-10.parquet",
+      "positive_put_delta": 12810,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-11.parquet",
+      "positive_put_delta": 12692,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-12.parquet",
+      "positive_put_delta": 13166,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-15.parquet",
+      "positive_put_delta": 12835,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-16.parquet",
+      "positive_put_delta": 13049,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-17.parquet",
+      "positive_put_delta": 12592,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-18.parquet",
+      "positive_put_delta": 12603,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-19.parquet",
+      "positive_put_delta": 12446,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-22.parquet",
+      "positive_put_delta": 12702,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-23.parquet",
+      "positive_put_delta": 13018,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-24.parquet",
+      "positive_put_delta": 13185,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-25.parquet",
+      "positive_put_delta": 13031,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-26.parquet",
+      "positive_put_delta": 13098,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-29.parquet",
+      "positive_put_delta": 12930,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-09-30.parquet",
+      "positive_put_delta": 12681,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-01.parquet",
+      "positive_put_delta": 12880,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-02.parquet",
+      "positive_put_delta": 12962,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-03.parquet",
+      "positive_put_delta": 13009,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-06.parquet",
+      "positive_put_delta": 12812,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-07.parquet",
+      "positive_put_delta": 12926,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-08.parquet",
+      "positive_put_delta": 13107,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-09.parquet",
+      "positive_put_delta": 13126,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-10.parquet",
+      "positive_put_delta": 13457,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-13.parquet",
+      "positive_put_delta": 13780,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-14.parquet",
+      "positive_put_delta": 13624,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-15.parquet",
+      "positive_put_delta": 13454,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-16.parquet",
+      "positive_put_delta": 13648,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-17.parquet",
+      "positive_put_delta": 13414,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-20.parquet",
+      "positive_put_delta": 12676,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-21.parquet",
+      "positive_put_delta": 13001,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-22.parquet",
+      "positive_put_delta": 13275,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-23.parquet",
+      "positive_put_delta": 12947,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-24.parquet",
+      "positive_put_delta": 12650,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-27.parquet",
+      "positive_put_delta": 12536,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-28.parquet",
+      "positive_put_delta": 13135,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-29.parquet",
+      "positive_put_delta": 13314,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-30.parquet",
+      "positive_put_delta": 13296,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-10-31.parquet",
+      "positive_put_delta": 13146,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-03.parquet",
+      "positive_put_delta": 13141,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-04.parquet",
+      "positive_put_delta": 13277,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-05.parquet",
+      "positive_put_delta": 13489,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-06.parquet",
+      "positive_put_delta": 13315,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-07.parquet",
+      "positive_put_delta": 13515,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-10.parquet",
+      "positive_put_delta": 13072,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-11.parquet",
+      "positive_put_delta": 13239,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-12.parquet",
+      "positive_put_delta": 13422,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-13.parquet",
+      "positive_put_delta": 13471,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-14.parquet",
+      "positive_put_delta": 13591,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-17.parquet",
+      "positive_put_delta": 13601,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-18.parquet",
+      "positive_put_delta": 13691,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-19.parquet",
+      "positive_put_delta": 13750,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-20.parquet",
+      "positive_put_delta": 13856,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-21.parquet",
+      "positive_put_delta": 13944,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-24.parquet",
+      "positive_put_delta": 13438,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-25.parquet",
+      "positive_put_delta": 13253,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-26.parquet",
+      "positive_put_delta": 12939,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-11-28.parquet",
+      "positive_put_delta": 8069,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-01.parquet",
+      "positive_put_delta": 13296,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-02.parquet",
+      "positive_put_delta": 13100,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-03.parquet",
+      "positive_put_delta": 12968,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-04.parquet",
+      "positive_put_delta": 12805,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-05.parquet",
+      "positive_put_delta": 12636,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-08.parquet",
+      "positive_put_delta": 12604,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-09.parquet",
+      "positive_put_delta": 12593,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-10.parquet",
+      "positive_put_delta": 12772,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-11.parquet",
+      "positive_put_delta": 12759,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-12.parquet",
+      "positive_put_delta": 12806,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-15.parquet",
+      "positive_put_delta": 12743,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-16.parquet",
+      "positive_put_delta": 12648,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-17.parquet",
+      "positive_put_delta": 12470,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-18.parquet",
+      "positive_put_delta": 12771,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-19.parquet",
+      "positive_put_delta": 12684,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-22.parquet",
+      "positive_put_delta": 12350,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-23.parquet",
+      "positive_put_delta": 12419,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-24.parquet",
+      "positive_put_delta": 7719,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-26.parquet",
+      "positive_put_delta": 12655,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-29.parquet",
+      "positive_put_delta": 12611,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-30.parquet",
+      "positive_put_delta": 12945,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2025-12-31.parquet",
+      "positive_put_delta": 13082,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-02.parquet",
+      "positive_put_delta": 13307,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-05.parquet",
+      "positive_put_delta": 12782,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-06.parquet",
+      "positive_put_delta": 12507,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-07.parquet",
+      "positive_put_delta": 13281,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-08.parquet",
+      "positive_put_delta": 13116,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-09.parquet",
+      "positive_put_delta": 13068,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-12.parquet",
+      "positive_put_delta": 12886,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-13.parquet",
+      "positive_put_delta": 13050,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-14.parquet",
+      "positive_put_delta": 12900,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-15.parquet",
+      "positive_put_delta": 13007,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-16.parquet",
+      "positive_put_delta": 12896,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-20.parquet",
+      "positive_put_delta": 12925,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-21.parquet",
+      "positive_put_delta": 13568,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-22.parquet",
+      "positive_put_delta": 13405,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-23.parquet",
+      "positive_put_delta": 13414,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-26.parquet",
+      "positive_put_delta": 12948,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-27.parquet",
+      "positive_put_delta": 13077,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-28.parquet",
+      "positive_put_delta": 13024,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-29.parquet",
+      "positive_put_delta": 13049,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-01-30.parquet",
+      "positive_put_delta": 13060,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-02.parquet",
+      "positive_put_delta": 13137,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-03.parquet",
+      "positive_put_delta": 13028,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-04.parquet",
+      "positive_put_delta": 13272,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-05.parquet",
+      "positive_put_delta": 13375,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-06.parquet",
+      "positive_put_delta": 13502,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-09.parquet",
+      "positive_put_delta": 13202,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-10.parquet",
+      "positive_put_delta": 13187,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-11.parquet",
+      "positive_put_delta": 13476,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-12.parquet",
+      "positive_put_delta": 13389,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-13.parquet",
+      "positive_put_delta": 13464,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-17.parquet",
+      "positive_put_delta": 13284,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-18.parquet",
+      "positive_put_delta": 13266,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-19.parquet",
+      "positive_put_delta": 13336,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-20.parquet",
+      "positive_put_delta": 13348,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-23.parquet",
+      "positive_put_delta": 13198,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-24.parquet",
+      "positive_put_delta": 13316,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-25.parquet",
+      "positive_put_delta": 12839,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-26.parquet",
+      "positive_put_delta": 13377,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-02-27.parquet",
+      "positive_put_delta": 13166,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-02.parquet",
+      "positive_put_delta": 13280,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-03.parquet",
+      "positive_put_delta": 13215,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-04.parquet",
+      "positive_put_delta": 13608,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-05.parquet",
+      "positive_put_delta": 13555,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-06.parquet",
+      "positive_put_delta": 13480,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-09.parquet",
+      "positive_put_delta": 13596,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-10.parquet",
+      "positive_put_delta": 13477,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-11.parquet",
+      "positive_put_delta": 13471,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-12.parquet",
+      "positive_put_delta": 13531,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-13.parquet",
+      "positive_put_delta": 13578,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-16.parquet",
+      "positive_put_delta": 13673,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-17.parquet",
+      "positive_put_delta": 13394,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-18.parquet",
+      "positive_put_delta": 13041,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-19.parquet",
+      "positive_put_delta": 13264,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-20.parquet",
+      "positive_put_delta": 13260,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-23.parquet",
+      "positive_put_delta": 13622,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-24.parquet",
+      "positive_put_delta": 13551,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-25.parquet",
+      "positive_put_delta": 13557,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-26.parquet",
+      "positive_put_delta": 13471,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-27.parquet",
+      "positive_put_delta": 13640,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-30.parquet",
+      "positive_put_delta": 13810,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-03-31.parquet",
+      "positive_put_delta": 13642,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-01.parquet",
+      "positive_put_delta": 13434,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-02.parquet",
+      "positive_put_delta": 13332,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-06.parquet",
+      "positive_put_delta": 13074,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-07.parquet",
+      "positive_put_delta": 12990,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-08.parquet",
+      "positive_put_delta": 11966,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-09.parquet",
+      "positive_put_delta": 13105,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-10.parquet",
+      "positive_put_delta": 13494,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-13.parquet",
+      "positive_put_delta": 12850,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-14.parquet",
+      "positive_put_delta": 12706,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-15.parquet",
+      "positive_put_delta": 12804,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-16.parquet",
+      "positive_put_delta": 13311,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-17.parquet",
+      "positive_put_delta": 12642,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-20.parquet",
+      "positive_put_delta": 13266,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-21.parquet",
+      "positive_put_delta": 13324,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-22.parquet",
+      "positive_put_delta": 12968,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-23.parquet",
+      "positive_put_delta": 13097,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-24.parquet",
+      "positive_put_delta": 12840,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-27.parquet",
+      "positive_put_delta": 13006,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-28.parquet",
+      "positive_put_delta": 12962,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-29.parquet",
+      "positive_put_delta": 13223,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-04-30.parquet",
+      "positive_put_delta": 12683,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-01.parquet",
+      "positive_put_delta": 13398,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-04.parquet",
+      "positive_put_delta": 13242,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-05.parquet",
+      "positive_put_delta": 13002,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-06.parquet",
+      "positive_put_delta": 12533,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-07.parquet",
+      "positive_put_delta": 13664,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-08.parquet",
+      "positive_put_delta": 13274,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-11.parquet",
+      "positive_put_delta": 13160,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-12.parquet",
+      "positive_put_delta": 13235,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-13.parquet",
+      "positive_put_delta": 12928,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-14.parquet",
+      "positive_put_delta": 13148,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-15.parquet",
+      "positive_put_delta": 13558,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-18.parquet",
+      "positive_put_delta": 13380,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-19.parquet",
+      "positive_put_delta": 13307,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-20.parquet",
+      "positive_put_delta": 13426,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-21.parquet",
+      "positive_put_delta": 13242,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-22.parquet",
+      "positive_put_delta": 13124,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-26.parquet",
+      "positive_put_delta": 13023,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-27.parquet",
+      "positive_put_delta": 13151,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-28.parquet",
+      "positive_put_delta": 12841,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-05-29.parquet",
+      "positive_put_delta": 6578,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-01.parquet",
+      "positive_put_delta": 13266,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-02.parquet",
+      "positive_put_delta": 11408,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-03.parquet",
+      "positive_put_delta": 13422,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-04.parquet",
+      "positive_put_delta": 13253,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-05.parquet",
+      "positive_put_delta": 6600,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-08.parquet",
+      "positive_put_delta": 13618,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-09.parquet",
+      "positive_put_delta": 13613,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-10.parquet",
+      "positive_put_delta": 5059,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-11.parquet",
+      "positive_put_delta": 13885,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-12.parquet",
+      "positive_put_delta": 8433,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-15.parquet",
+      "positive_put_delta": 13114,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-17.parquet",
+      "positive_put_delta": 13236,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-18.parquet",
+      "positive_put_delta": 13072,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-22.parquet",
+      "positive_put_delta": 13316,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-23.parquet",
+      "positive_put_delta": 13294,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-24.parquet",
+      "positive_put_delta": 13752,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-25.parquet",
+      "positive_put_delta": 13775,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-26.parquet",
+      "positive_put_delta": 13543,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-29.parquet",
+      "positive_put_delta": 6774,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-06-30.parquet",
+      "positive_put_delta": 13160,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-07-01.parquet",
+      "positive_put_delta": 13500,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-07-02.parquet",
+      "positive_put_delta": 13416,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-07-06.parquet",
+      "positive_put_delta": 13092,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-07-07.parquet",
+      "positive_put_delta": 13424,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-07-08.parquet",
+      "positive_put_delta": 13542,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-07-09.parquet",
+      "positive_put_delta": 13256,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-07-10.parquet",
+      "positive_put_delta": 13178,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-07-13.parquet",
+      "positive_put_delta": 13516,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-07-14.parquet",
+      "positive_put_delta": 13544,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-07-15.parquet",
+      "positive_put_delta": 13279,
+      "negative_put_delta": 0
+    },
+    {
+      "file": "2026-07-16.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13330
+    },
+    {
+      "file": "2026-07-17.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 26366
+    },
+    {
+      "file": "2026-07-20.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 12910
+    },
+    {
+      "file": "2026-07-21.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13494
+    },
+    {
+      "file": "2026-07-22.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13381
+    },
+    {
+      "file": "2026-07-23.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13400
+    },
+    {
+      "file": "2026-07-24.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13551
+    },
+    {
+      "file": "2026-07-27.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13345
+    },
+    {
+      "file": "2026-07-28.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13193
+    },
+    {
+      "file": "2026-07-29.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13332
+    },
+    {
+      "file": "2026-07-30.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13342
+    },
+    {
+      "file": "2026-07-31.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13331
+    },
+    {
+      "file": "2026-08-03.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 12384
+    },
+    {
+      "file": "2026-08-04.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 12004
+    },
+    {
+      "file": "2026-08-05.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13390
+    },
+    {
+      "file": "2026-08-06.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13429
+    },
+    {
+      "file": "2026-08-10.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 12973
+    },
+    {
+      "file": "2026-08-11.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13005
+    },
+    {
+      "file": "2026-08-12.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13045
+    },
+    {
+      "file": "2026-08-13.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 12917
+    },
+    {
+      "file": "2026-08-14.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 12908
+    },
+    {
+      "file": "2026-08-17.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 13133
+    },
+    {
+      "file": "2026-08-18.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11906
+    },
+    {
+      "file": "2026-08-19.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11780
+    },
+    {
+      "file": "2026-08-20.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11699
+    },
+    {
+      "file": "2026-08-21.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11805
+    },
+    {
+      "file": "2026-08-24.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11841
+    },
+    {
+      "file": "2026-08-25.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11719
+    },
+    {
+      "file": "2026-08-26.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 10236
+    },
+    {
+      "file": "2026-08-27.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11525
+    },
+    {
+      "file": "2026-08-28.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11469
+    },
+    {
+      "file": "2026-08-31.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11575
+    },
+    {
+      "file": "2026-09-01.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11526
+    },
+    {
+      "file": "2026-09-02.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11874
+    },
+    {
+      "file": "2026-09-03.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11785
+    },
+    {
+      "file": "2026-09-04.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11771
+    },
+    {
+      "file": "2026-09-08.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 10234
+    },
+    {
+      "file": "2026-09-09.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 12048
+    },
+    {
+      "file": "2026-09-10.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 12363
+    },
+    {
+      "file": "2026-09-11.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 12303
+    },
+    {
+      "file": "2026-09-14.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 10697
+    },
+    {
+      "file": "2026-09-15.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 12217
+    },
+    {
+      "file": "2026-09-16.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 12056
+    },
+    {
+      "file": "2026-09-17.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11863
+    },
+    {
+      "file": "2026-09-18.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11510
+    },
+    {
+      "file": "2026-09-21.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 11405
+    },
+    {
+      "file": "2026-09-22.parquet",
+      "positive_put_delta": 0,
+      "negative_put_delta": 12105
+    }
+  ],
+  "schemas": {
+    "('time', 'contract', 'expiry', 'strike', 'underlying', 'rate', 'call_price', 'put_price', 'atm', 'call_iv', 'put_iv', 'call_delta', 'call_gamma', 'call_vega', 'call_theta', 'put_delta', 'put_gamma', 'put_vega', 'put_theta', 'dte', 'straddle_delta')": 275,
+    "('contract', 'time', 'expiry', 'strike', 'underlying', 'rate', 'call_price', 'put_price', 'call_iv', 'put_iv', 'call_delta', 'put_delta', 'straddle_delta', 'call_gamma', 'put_gamma', 'call_vega', 'put_vega', 'call_theta', 'put_theta', 'atm', 'dte')": 49
+  }
+}

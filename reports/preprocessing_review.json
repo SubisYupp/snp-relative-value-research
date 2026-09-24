@@ -1,0 +1,1504 @@
+{
+  "old_version": "snp-rv-v1.0.0",
+  "new_version": "snp-rv-v1.1.0",
+  "retrained": false,
+  "original_model_unchanged": true,
+  "old_clean_rows": 8101979,
+  "new_clean_rows": 8127728,
+  "old_matched_rows": 7049059,
+  "new_matched_rows": 7073457,
+  "comparison": {
+    "revised_infinite_numerics": 0,
+    "revised_negative_expected_iv": 0,
+    "revised_duplicate_identities": 0,
+    "common_observations": 8101905,
+    "restored_observations": 25823,
+    "removed_previously_clean_observations": 74,
+    "newly_matched_common_observations": 1940,
+    "invalidated_old_matches": 64,
+    "target_changed_common_rows": 2004,
+    "expected_iv_changed_common_rows": 116,
+    "atm_iv_changed_common_rows": 9,
+    "forward_variance_changed_common_rows": 1567012
+  },
+  "quarantined_quotes": [
+    {
+      "timestamp": "2025-10-10 10:00:00",
+      "contract": "ODSNP5DV25",
+      "expiry": "2025-10-29 19:00:00",
+      "strike": "6420.0",
+      "option_type": "C",
+      "option_price": "4408.95",
+      "underlying": "6757.75",
+      "iv": "0.1705",
+      "vega": "3.2199",
+      "source_file": "2025-10-10.parquet"
+    },
+    {
+      "timestamp": "2026-03-26 15:00:00",
+      "contract": "OMSNPH27",
+      "expiry": "2027-03-30 18:00:00",
+      "strike": "6200.0",
+      "option_type": "C",
+      "option_price": "0.0",
+      "underlying": "6523.75",
+      "iv": "0.2327",
+      "vega": "23.408",
+      "source_file": "2026-03-26.parquet"
+    },
+    {
+      "timestamp": "2026-03-26 15:00:00",
+      "contract": "OMSNPH27",
+      "expiry": "2027-03-30 18:00:00",
+      "strike": "6500.0",
+      "option_type": "P",
+      "option_price": "0.0",
+      "underlying": "6523.75",
+      "iv": "0.2176",
+      "vega": "25.0337",
+      "source_file": "2026-03-26.parquet"
+    },
+    {
+      "timestamp": "2026-03-26 15:00:00",
+      "contract": "OMSNPH27",
+      "expiry": "2027-03-30 18:00:00",
+      "strike": "6800.0",
+      "option_type": "P",
+      "option_price": "0.0",
+      "underlying": "6523.75",
+      "iv": "0.2013",
+      "vega": "25.7753",
+      "source_file": "2026-03-26.parquet"
+    },
+    {
+      "timestamp": "2026-03-27 15:00:00",
+      "contract": "OMSNPH27",
+      "expiry": "2027-03-30 18:00:00",
+      "strike": "7000.0",
+      "option_type": "P",
+      "option_price": "367.55",
+      "underlying": "6411.0",
+      "iv": "0.2064",
+      "vega": "24.8672",
+      "source_file": "2026-03-27.parquet"
+    },
+    {
+      "timestamp": "2026-06-26 15:00:00",
+      "contract": "OMAMSNPQ26",
+      "expiry": "2026-08-20 18:00:00",
+      "strike": "7000.0",
+      "option_type": "C",
+      "option_price": "0.0",
+      "underlying": "7372.75",
+      "iv": "0.0",
+      "vega": "0.0",
+      "source_file": "2026-06-26.parquet"
+    },
+    {
+      "timestamp": "2026-06-26 15:00:00",
+      "contract": "OMAMSNPQ26",
+      "expiry": "2026-08-20 18:00:00",
+      "strike": "7840.0",
+      "option_type": "P",
+      "option_price": "0.0",
+      "underlying": "7372.75",
+      "iv": "0.0",
+      "vega": "0.0",
+      "source_file": "2026-06-26.parquet"
+    },
+    {
+      "timestamp": "2026-06-26 15:00:00",
+      "contract": "OMAMSNPQ26",
+      "expiry": "2026-08-20 18:00:00",
+      "strike": "7880.0",
+      "option_type": "P",
+      "option_price": "0.0",
+      "underlying": "7372.75",
+      "iv": "0.0",
+      "vega": "0.0",
+      "source_file": "2026-06-26.parquet"
+    },
+    {
+      "timestamp": "2026-06-26 15:00:00",
+      "contract": "OMAMSNPU26",
+      "expiry": "2026-09-17 18:00:00",
+      "strike": "7800.0",
+      "option_type": "P",
+      "option_price": "0.0",
+      "underlying": "7372.75",
+      "iv": "0.0",
+      "vega": "0.0",
+      "source_file": "2026-06-26.parquet"
+    },
+    {
+      "timestamp": "2026-06-26 15:00:00",
+      "contract": "OMAMSNPU26",
+      "expiry": "2026-09-17 18:00:00",
+      "strike": "7840.0",
+      "option_type": "P",
+      "option_price": "0.0",
+      "underlying": "7372.75",
+      "iv": "0.0",
+      "vega": "0.0",
+      "source_file": "2026-06-26.parquet"
+    }
+  ],
+  "atm_market_changed_timestamps": 2223,
+  "atm_market_median_absolute_change": 0.00045000000000000595,
+  "old_reported_retained_iv_above_300pct": 4869,
+  "corrected_retained_iv_above_300pct": 0,
+  "training_sensitivity": [
+    {
+      "vega_bucket": "(0.0, 0.1]",
+      "n": 29587,
+      "squared_sum": 40897757.7271965,
+      "max_absolute_target": 1347.782470703125,
+      "row_share": 0.005367634039366399,
+      "squared_target_share": 0.593618765055266,
+      "mean_absolute_target": 7.300456070233548
+    },
+    {
+      "vega_bucket": "(0.1, 0.5]",
+      "n": 132218,
+      "squared_sum": 16864605.603022136,
+      "max_absolute_target": 615.7702026367188,
+      "row_share": 0.023986813040083366,
+      "squared_target_share": 0.2447847243359465,
+      "mean_absolute_target": 3.424130980653164
+    },
+    {
+      "vega_bucket": "(0.5, 1.0]",
+      "n": 165803,
+      "squared_sum": 3806583.04415062,
+      "max_absolute_target": 136.17698669433594,
+      "row_share": 0.03007975890185105,
+      "squared_target_share": 0.05525141844748034,
+      "mean_absolute_target": 1.880382517204152
+    },
+    {
+      "vega_bucket": "(1.0, 3.0]",
+      "n": 794674,
+      "squared_sum": 2687000.2529865727,
+      "max_absolute_target": 78.81153869628906,
+      "row_share": 0.1441686961367984,
+      "squared_target_share": 0.03900100789194088,
+      "mean_absolute_target": 0.7843737652169317
+    },
+    {
+      "vega_bucket": "(3.0, 10.0]",
+      "n": 2848995,
+      "squared_sum": 4499642.597656874,
+      "max_absolute_target": 1340.5052490234375,
+      "row_share": 0.5168608693001884,
+      "squared_target_share": 0.0653109713209268,
+      "mean_absolute_target": 0.30083595267804963
+    },
+    {
+      "vega_bucket": "(10.0, inf]",
+      "n": 1540835,
+      "squared_sum": 140072.66227434733,
+      "max_absolute_target": 55.6599006652832,
+      "row_share": 0.2795362285817124,
+      "squared_target_share": 0.002033112948439417,
+      "mean_absolute_target": 0.11149470092514772
+    }
+  ],
+  "source_manifest": [
+    {
+      "source": "SNP data\\2025-06-05.parquet",
+      "sha256": "7c51127daf9178a575f602e25b805b6c2a8ff96225350593e30772692d030101"
+    },
+    {
+      "source": "SNP data\\2025-06-06.parquet",
+      "sha256": "f18aeda43c2938a55dd2190f1427e505c80bbf1ccf88c8ab649261194d9e77b3"
+    },
+    {
+      "source": "SNP data\\2025-06-09.parquet",
+      "sha256": "6ca66656232faec854e673da30f037b675abb6a2c1302df717a2e5ccfb439661"
+    },
+    {
+      "source": "SNP data\\2025-06-10.parquet",
+      "sha256": "9773e524fdafce452d926f22f250dc8e79a749ac30c2688efe206fb16c4fe595"
+    },
+    {
+      "source": "SNP data\\2025-06-11.parquet",
+      "sha256": "20278877ab4c4fbaed883857e14c8a1319730d37faee6467f19b77ea9fb3678f"
+    },
+    {
+      "source": "SNP data\\2025-06-12.parquet",
+      "sha256": "c6ad4e66ef538824ffc288146141abbd99ab303c009051af1165119a4491f2b7"
+    },
+    {
+      "source": "SNP data\\2025-06-13.parquet",
+      "sha256": "c09b2292e9ec2068473fcceabbf02a816ababe60f3764df4b6eaee5a9cae90bc"
+    },
+    {
+      "source": "SNP data\\2025-06-16.parquet",
+      "sha256": "ce9a3da51960072e7349c46cc59abb05a369ed8597d076f838a1d970e1c328db"
+    },
+    {
+      "source": "SNP data\\2025-06-17.parquet",
+      "sha256": "a9caded52efbd786ffd0fb152a6609c50a5d5a95fae8f091acde775bf0712926"
+    },
+    {
+      "source": "SNP data\\2025-06-18.parquet",
+      "sha256": "9f2d1e56ef3f5620f93909cd2b045412e3957eae9c20e3e25be8b7b0b972624b"
+    },
+    {
+      "source": "SNP data\\2025-06-20.parquet",
+      "sha256": "f114b902ebcaa1931b640dc8b04179adace5f271a633300c4138a9c4ada2f913"
+    },
+    {
+      "source": "SNP data\\2025-06-23.parquet",
+      "sha256": "6b994baf9bd30138aaed6425d47a64ac7f95afd1712f3542837080ff2960a079"
+    },
+    {
+      "source": "SNP data\\2025-06-24.parquet",
+      "sha256": "e63fbefdd73431c5f71daafe81faf0f9294d9317ae78911fda759e495dac6f6f"
+    },
+    {
+      "source": "SNP data\\2025-06-25.parquet",
+      "sha256": "87d0f95ac0f203f7b405198a80906ecf4b2624076018af83e24c7ef783b747c0"
+    },
+    {
+      "source": "SNP data\\2025-06-26.parquet",
+      "sha256": "8ae1ca08c5f16dd8327f8dbff7bb75d77998c2ce7218330ec22c50b6fe13ef7f"
+    },
+    {
+      "source": "SNP data\\2025-06-27.parquet",
+      "sha256": "ff71f013e45e82505eaccc9b61eae9387faeca680bb27ba2d49658f816ab3784"
+    },
+    {
+      "source": "SNP data\\2025-06-30.parquet",
+      "sha256": "dc923e481b2045a517f3e9cbb6b4fa95b3af6908225b2e32cda3e3cf25d19532"
+    },
+    {
+      "source": "SNP data\\2025-07-01.parquet",
+      "sha256": "d42b072eed15a75aa186a2a4f859af574ffd07a9768aaa85b6e981c83ab56005"
+    },
+    {
+      "source": "SNP data\\2025-07-02.parquet",
+      "sha256": "8b0ccc1f7181841c9fd7242cb442f0c4f7fbdf8f7ee595c04b5ee5d9e9e7cc27"
+    },
+    {
+      "source": "SNP data\\2025-07-03.parquet",
+      "sha256": "fb7928fe97298adb5917362b54d044acec15dc63e7047a2ebc6a125964c4e357"
+    },
+    {
+      "source": "SNP data\\2025-07-07.parquet",
+      "sha256": "612e31420303ce958b9730a08270806b4a1e5b361a2dc438d2538fd1c72c3416"
+    },
+    {
+      "source": "SNP data\\2025-07-08.parquet",
+      "sha256": "24c355a3fb52aad005db1f72b82bbc0fc27a40e6430d6c67e9b9ff2b661d8f8a"
+    },
+    {
+      "source": "SNP data\\2025-07-09.parquet",
+      "sha256": "19ab2e6fdeeebaad868b44e185e621608cb5b0b4c3268271b5504a5c73730912"
+    },
+    {
+      "source": "SNP data\\2025-07-10.parquet",
+      "sha256": "03ea0f372c90f5bc7478ad89a8e7cd2fb50b368147f7594312afcc15fc26bd9e"
+    },
+    {
+      "source": "SNP data\\2025-07-11.parquet",
+      "sha256": "3a2ee5f23f6e7e51d3cb8d58a8a9131f5029b5a3d9063d33fdebae4f7b2f7d49"
+    },
+    {
+      "source": "SNP data\\2025-07-14.parquet",
+      "sha256": "8314ee12aca6b6cfea7f9d175502cf13b976c92e546f5a91bec5135241db62ca"
+    },
+    {
+      "source": "SNP data\\2025-07-15.parquet",
+      "sha256": "8659272acce9e1cdb4b7fc2b85696299c34e3ce30da7d7463597659ad396ab2a"
+    },
+    {
+      "source": "SNP data\\2025-07-16.parquet",
+      "sha256": "45de275d04da9ed3f68635b17acfbf6a562f9080e4562a4a300b33addbc25b9a"
+    },
+    {
+      "source": "SNP data\\2025-07-17.parquet",
+      "sha256": "3aec0e5ce4c73dae4670e1e2498e12a2c07e40c6180a1430dd3db6a0386d07e1"
+    },
+    {
+      "source": "SNP data\\2025-07-18.parquet",
+      "sha256": "04342e6a34019331ddd97e9e63eba1774f71e7c171950917810b3adbb662bebb"
+    },
+    {
+      "source": "SNP data\\2025-07-21.parquet",
+      "sha256": "7a7ff1e2493bd95257e326df86e4b836edb4fe528f82091a22e66c020786f860"
+    },
+    {
+      "source": "SNP data\\2025-07-22.parquet",
+      "sha256": "69c229639a0287a395055b64611bdd7cb96f777beafd6339715008cc3adaf3ab"
+    },
+    {
+      "source": "SNP data\\2025-07-23.parquet",
+      "sha256": "08c9bf66ff44ef88ce732ba8440fba1837c5eeab5bcdc6cccb912d68a0ec22f6"
+    },
+    {
+      "source": "SNP data\\2025-07-24.parquet",
+      "sha256": "582fb95d0f258eb803dbdb6e23d8f4f589220cfd54951ae0e8b4cd5413b86aaa"
+    },
+    {
+      "source": "SNP data\\2025-07-25.parquet",
+      "sha256": "634c80c0c4633f3814b35bd153a71b84b59da3c6ca7a36cd9ca775c66a5670cb"
+    },
+    {
+      "source": "SNP data\\2025-07-28.parquet",
+      "sha256": "9cfe8673c526b2f702b7136a86980d886445e8bba38cbe2f8794045ac87d2961"
+    },
+    {
+      "source": "SNP data\\2025-07-29.parquet",
+      "sha256": "b2e994c14e210858ad54bece4e8dd05597a2aae4f14369c6b7b27dc4b8bf64f4"
+    },
+    {
+      "source": "SNP data\\2025-07-30.parquet",
+      "sha256": "e074197359a8a02dcbbbf8785eb1169ee65f7d5e00f4e2e2a3b1828d7f5f1353"
+    },
+    {
+      "source": "SNP data\\2025-07-31.parquet",
+      "sha256": "8d3a795bb6f44776221621f020e2dcd2bc04f0b43fc043ec1d17cac855aea807"
+    },
+    {
+      "source": "SNP data\\2025-08-01.parquet",
+      "sha256": "d5060c6f687485d30bade674b43da35ff1800f3bed4f1d1fbb4c1ead88ce9d17"
+    },
+    {
+      "source": "SNP data\\2025-08-04.parquet",
+      "sha256": "da19440863077d13d104b97d29332c19752c017979dd011689879c62039ddeeb"
+    },
+    {
+      "source": "SNP data\\2025-08-05.parquet",
+      "sha256": "7fb30bc3783f4e02e1236b67bef26e61ebbfe25163fed049fba1557882a05bc7"
+    },
+    {
+      "source": "SNP data\\2025-08-06.parquet",
+      "sha256": "36b60846b076bcc8ab3d927da6e0b253b15a49c08b376ef7aaa72ea6a04c770e"
+    },
+    {
+      "source": "SNP data\\2025-08-07.parquet",
+      "sha256": "f4c27bbc618e8ce8da3213f6ccbf7d6d528fb115ce994cf8c7dc3c13c1d10a74"
+    },
+    {
+      "source": "SNP data\\2025-08-08.parquet",
+      "sha256": "2d5abfeb170d3688379cc3ed482e79a4f293ae61e5016b85afb14e166090f420"
+    },
+    {
+      "source": "SNP data\\2025-08-11.parquet",
+      "sha256": "d513018a4b6d1ff5dc2ae9236c70c3450e63202aa1909901499a3d9c006ba79b"
+    },
+    {
+      "source": "SNP data\\2025-08-12.parquet",
+      "sha256": "faa322e663600a10b8b80cd6a2dcfd2685f5b6faad72076fa2a20c5611b29ccb"
+    },
+    {
+      "source": "SNP data\\2025-08-13.parquet",
+      "sha256": "9f215e630823d627c45481c86740c033bdc09b0c398c66e03da8d2aadf8952c2"
+    },
+    {
+      "source": "SNP data\\2025-08-14.parquet",
+      "sha256": "d307ae837fec05b163c3be3ba613b7f2af80b6755fc644ea577abee463f72c03"
+    },
+    {
+      "source": "SNP data\\2025-08-15.parquet",
+      "sha256": "22ba897cbf6e8eda93ad934051746a7331c8ba94aa0cd34d2193d47cb3ecbafb"
+    },
+    {
+      "source": "SNP data\\2025-08-18.parquet",
+      "sha256": "7cfd020ab2d69cbae8462f27c357729c1f833540175fded61f64cf25f5d0b60d"
+    },
+    {
+      "source": "SNP data\\2025-08-19.parquet",
+      "sha256": "3a801ea68040cc19c6bff54be06c50247e76e3a1babcb0562ad80dfc6cbcaa6f"
+    },
+    {
+      "source": "SNP data\\2025-08-20.parquet",
+      "sha256": "7cfb246961850456785fd5287a3ea1f105a6a173cdf5d46b8278bcad96f6f07c"
+    },
+    {
+      "source": "SNP data\\2025-08-21.parquet",
+      "sha256": "340956809d909e93181d06b786947712e05004383024214b32a91c4aa90e20ac"
+    },
+    {
+      "source": "SNP data\\2025-08-22.parquet",
+      "sha256": "73536a0823015d09d13bc2ffaa35e8a7de434fdea569f73d9ce2cf293e36b2b2"
+    },
+    {
+      "source": "SNP data\\2025-08-25.parquet",
+      "sha256": "03661471f2d4515c4d3ff2fcabafbcaf1f81917a53d602a5ca854dede1311a09"
+    },
+    {
+      "source": "SNP data\\2025-08-26.parquet",
+      "sha256": "31bc917e6991d51d75bee9be03b277466d7f4aafe6dd7b0d12ab88ded74b0010"
+    },
+    {
+      "source": "SNP data\\2025-08-27.parquet",
+      "sha256": "54078a4c21e1557932d23d7667fdfce9817eefc3264f2114cbf43ee1008fcd01"
+    },
+    {
+      "source": "SNP data\\2025-08-28.parquet",
+      "sha256": "e48a080502aa13bd5df6ea6529d272fda6356205764d55e2c65697c6813526c5"
+    },
+    {
+      "source": "SNP data\\2025-08-29.parquet",
+      "sha256": "9106b6f3c9ab751559b0c1a13c57ee7c67b979bfb6da234b21dab66c66968a36"
+    },
+    {
+      "source": "SNP data\\2025-09-02.parquet",
+      "sha256": "84b9fde26b9a95f8918d2fef748288f29e5ea3e3b39798f972d6c03553a8db61"
+    },
+    {
+      "source": "SNP data\\2025-09-03.parquet",
+      "sha256": "38bcb8e9ba6f47cdf3238c203e75b175922a2323c1071de7cca3b8d1f293627f"
+    },
+    {
+      "source": "SNP data\\2025-09-04.parquet",
+      "sha256": "64a7f48e867038bc9edfe5b1f6e9e6bcecb56eb278892dd5289cdbf32d6b90e2"
+    },
+    {
+      "source": "SNP data\\2025-09-05.parquet",
+      "sha256": "f8b77b57fd87ba92776a601e591dce4486edfab6e24e654ae141285d38fa5f5e"
+    },
+    {
+      "source": "SNP data\\2025-09-08.parquet",
+      "sha256": "511fdcfe8194a068f8dd6351ab44c7ccfa7eaba9761a7ec16a48e6e9e936d08d"
+    },
+    {
+      "source": "SNP data\\2025-09-09.parquet",
+      "sha256": "be856cc4edcdb81fa6fd25da2968c537e9f93681e54d898cb26b8345dcf3ac77"
+    },
+    {
+      "source": "SNP data\\2025-09-10.parquet",
+      "sha256": "161cb4216eef2ef281e50f3456810da89d38aad179b0137ad4b4b94103509eb9"
+    },
+    {
+      "source": "SNP data\\2025-09-11.parquet",
+      "sha256": "adaa3bee250f8c9c5ae498a118556642915d314998509fc3f03637d6f07cffa6"
+    },
+    {
+      "source": "SNP data\\2025-09-12.parquet",
+      "sha256": "483373ef260c52cfe0df7ad77462aabbd3c48efded899fec5026bbe0f09535c8"
+    },
+    {
+      "source": "SNP data\\2025-09-15.parquet",
+      "sha256": "174dbf8bbba378c5ef68e70a406b6f9f0f43990ed95cc161bc27ab82beea3697"
+    },
+    {
+      "source": "SNP data\\2025-09-16.parquet",
+      "sha256": "15eed9286d9db5379fbffe2d5b94677db8be9bf8227e8c4f8ab0a76f90140024"
+    },
+    {
+      "source": "SNP data\\2025-09-17.parquet",
+      "sha256": "43bc80235f84c2e67b9cb1458d2f23600d723ce93307e0902f2d42f584388f18"
+    },
+    {
+      "source": "SNP data\\2025-09-18.parquet",
+      "sha256": "05ef06119c7b668181c10f3fb4c4dddfe1209e1a7c2a319c21f9d715aa9738c4"
+    },
+    {
+      "source": "SNP data\\2025-09-19.parquet",
+      "sha256": "b4313107bdd4d7bac8a29993f1c9c29de62d8aca5cbac1c0be311b5b8028aa1b"
+    },
+    {
+      "source": "SNP data\\2025-09-22.parquet",
+      "sha256": "79b30e70dcee95cf664a73081af98c23821fd91c1d4752a72ccd7b98348f3762"
+    },
+    {
+      "source": "SNP data\\2025-09-23.parquet",
+      "sha256": "73e367ae50c8afc55a9eb3c6d4e6fc3b2e535ab215aad14368bce5c7123cb1f5"
+    },
+    {
+      "source": "SNP data\\2025-09-24.parquet",
+      "sha256": "7c9978f269ad58e11e19b3ff0e69635b4659c2a7027ce91b414ce49c5118b96a"
+    },
+    {
+      "source": "SNP data\\2025-09-25.parquet",
+      "sha256": "fa5e304bcea1e89d5fa84c799902754f9d52bb69a21874d0a5a3109afa908b4b"
+    },
+    {
+      "source": "SNP data\\2025-09-26.parquet",
+      "sha256": "f8241dfd965886bd5c226cd288c1d98b21d475dbebac23799a106bc1404c7757"
+    },
+    {
+      "source": "SNP data\\2025-09-29.parquet",
+      "sha256": "8f463d5a5196eef7553696b265b19f7700c516e39054a780446ef449a17b1fb5"
+    },
+    {
+      "source": "SNP data\\2025-09-30.parquet",
+      "sha256": "a471e82e8a961ebf458915e9dc69b09c8c09896eddbef2f257db6d1c8518df97"
+    },
+    {
+      "source": "SNP data\\2025-10-01.parquet",
+      "sha256": "3bdbea484914c2e482bbbede580e016e867f9dca5d8d5f6517d1173183be6628"
+    },
+    {
+      "source": "SNP data\\2025-10-02.parquet",
+      "sha256": "864fb025d327cb685dde679974f92138294e47c769319cd6a17a2ae20b5c929e"
+    },
+    {
+      "source": "SNP data\\2025-10-03.parquet",
+      "sha256": "07a1772a56ae683c70e0870f8a2a2b47e15f38e8dca99cafea25f36bc53f9b40"
+    },
+    {
+      "source": "SNP data\\2025-10-06.parquet",
+      "sha256": "b6a424c0a02b47fb8190e97270d3bd47b6c0579db5084fe0252171a83e5b9973"
+    },
+    {
+      "source": "SNP data\\2025-10-07.parquet",
+      "sha256": "5ccbc0a45ec1302702456924af7b7d26df205301088b9d9b3724822ef9657a18"
+    },
+    {
+      "source": "SNP data\\2025-10-08.parquet",
+      "sha256": "320a29c154e51f7c8c48aa9c7e70a67f2892b8e3263f2579bb89f4c5624197c6"
+    },
+    {
+      "source": "SNP data\\2025-10-09.parquet",
+      "sha256": "6cf8c12453c464cce55effc52a30bac9ab4b6133b648c22b65771612c6b5909e"
+    },
+    {
+      "source": "SNP data\\2025-10-10.parquet",
+      "sha256": "257daf6c3d6a2abf853585669b69fcb35d661a4c20f35363ebc291e8163e3338"
+    },
+    {
+      "source": "SNP data\\2025-10-13.parquet",
+      "sha256": "a3588822c058416b43d243c38cf2d8fd1ce506d9bf363e4643ac2ce8d574d4a8"
+    },
+    {
+      "source": "SNP data\\2025-10-14.parquet",
+      "sha256": "a0ef760cfa1153c4c7c668f1911da4c78e730af10c3ed405ef6a8f1c3ffcdeaa"
+    },
+    {
+      "source": "SNP data\\2025-10-15.parquet",
+      "sha256": "5f779e96e34f204a2deaddcfc9ac6116c5cb6bbf06552011d42cb1d72aa1399f"
+    },
+    {
+      "source": "SNP data\\2025-10-16.parquet",
+      "sha256": "452026dd9c669c300840a252a27520bbf158a41a81d5be5f7d46d737600f3c0f"
+    },
+    {
+      "source": "SNP data\\2025-10-17.parquet",
+      "sha256": "e67de869b8b387136b330bc582a82f573e8aed02255843f1faa6ee39d10036b1"
+    },
+    {
+      "source": "SNP data\\2025-10-20.parquet",
+      "sha256": "dd77e75560722bbbaa6397f4c27381ba6fdd0f83e29d6b0886367adad64c30f8"
+    },
+    {
+      "source": "SNP data\\2025-10-21.parquet",
+      "sha256": "94c695a119d28ee52b6f63133dda2ffdf388caaed770d250264b2b080fcae261"
+    },
+    {
+      "source": "SNP data\\2025-10-22.parquet",
+      "sha256": "a33f52a2208fa5595e910ee6f8f1f00e2172ceec9f9386e4eea40fdf0781ae0b"
+    },
+    {
+      "source": "SNP data\\2025-10-23.parquet",
+      "sha256": "f5baf69ce663e8b1f1183a86e75010748c16adf1f57916886223a6fd1fb70dc7"
+    },
+    {
+      "source": "SNP data\\2025-10-24.parquet",
+      "sha256": "d332ec042001dc5a21e0bced0962c56513ec59c59bba90700bb692e741aba850"
+    },
+    {
+      "source": "SNP data\\2025-10-27.parquet",
+      "sha256": "682491a0c2e3a22b8317668d224276b222c9bbfde99f9af269dda348444ea040"
+    },
+    {
+      "source": "SNP data\\2025-10-28.parquet",
+      "sha256": "c46c491b50ca3bee117a7c00dace65e771cc2216a155d4279689323bd05ed102"
+    },
+    {
+      "source": "SNP data\\2025-10-29.parquet",
+      "sha256": "8f91de174cdec944afbed51ffb5d0eb7d8b4b53f9ec49e577757deb56150af93"
+    },
+    {
+      "source": "SNP data\\2025-10-30.parquet",
+      "sha256": "0124bc8d5438acf9aebaaf72a4181400f4390921c99bf007f1a7e9780e21acbe"
+    },
+    {
+      "source": "SNP data\\2025-10-31.parquet",
+      "sha256": "1fb7b731078c92d0499f59f1567eada3e56794935343dcf09998d840c1973ea5"
+    },
+    {
+      "source": "SNP data\\2025-11-03.parquet",
+      "sha256": "2d23b6708b4c7464fc443a571dfda5da0afcbbe457a5d2a17ba12433c37ec1e2"
+    },
+    {
+      "source": "SNP data\\2025-11-04.parquet",
+      "sha256": "7d234869ba0bfd552c415694ed14929c0cbe86b56d1c9cbed776732887cca354"
+    },
+    {
+      "source": "SNP data\\2025-11-05.parquet",
+      "sha256": "6c0642fcbeb5645323941ecc697f8b754e3dacc079739e78b670432f9bd0459d"
+    },
+    {
+      "source": "SNP data\\2025-11-06.parquet",
+      "sha256": "4605b405f28aab9bb75e12afc74f096262a99848e76cd3168ef2b4dbee210dc3"
+    },
+    {
+      "source": "SNP data\\2025-11-07.parquet",
+      "sha256": "8320755309ed7798c6b32923db869184cd4bac9866bd96a432df3c3edca1cc78"
+    },
+    {
+      "source": "SNP data\\2025-11-10.parquet",
+      "sha256": "9488eb9580d172a62c5e68978ae2e642d372496e3b042c97866acda5e4c56e4f"
+    },
+    {
+      "source": "SNP data\\2025-11-11.parquet",
+      "sha256": "46e7b63abd9eaca8112d5c9e68aabad98e613b58e3fc9e462098faa4d9cbe9b3"
+    },
+    {
+      "source": "SNP data\\2025-11-12.parquet",
+      "sha256": "3345356dfb922a830d4ae2093c2860ee6d47148cd61c557fea4349b6d0603e8e"
+    },
+    {
+      "source": "SNP data\\2025-11-13.parquet",
+      "sha256": "6a5aaa7c9b94dd82039a8bfc7451d56b07615cfd57dd2b1f2e228b31cbda4a48"
+    },
+    {
+      "source": "SNP data\\2025-11-14.parquet",
+      "sha256": "2d42d851788a93af375b385049c35428aa91e5463904d96cf599096b024a111f"
+    },
+    {
+      "source": "SNP data\\2025-11-17.parquet",
+      "sha256": "a5fae4bbeb2ce41f9fc3dc87c9d886ff231d4f764d8801aa533e71fbef3e459a"
+    },
+    {
+      "source": "SNP data\\2025-11-18.parquet",
+      "sha256": "e3fd84b8783647e358441fe604161efab2b8451872c541d740aed02d2f573143"
+    },
+    {
+      "source": "SNP data\\2025-11-19.parquet",
+      "sha256": "066aa63ee1c12108f7768249755cd40def22cea52513e76101d36af5b2688745"
+    },
+    {
+      "source": "SNP data\\2025-11-20.parquet",
+      "sha256": "7e1cb508814451d45532c26174ce86d94e88434b6369817b425f90ae0a6ed034"
+    },
+    {
+      "source": "SNP data\\2025-11-21.parquet",
+      "sha256": "4bc32e9e36635966e540ab6ceb83952c7b3300acbf870731c194096d6f4dafc2"
+    },
+    {
+      "source": "SNP data\\2025-11-24.parquet",
+      "sha256": "af74146604633a2247e476a7a869db59ef343330bcd7101c4c0ea84931bd3313"
+    },
+    {
+      "source": "SNP data\\2025-11-25.parquet",
+      "sha256": "ced673e9714e890b48522055c933c71b6fa4ec7ce690bd8779598b2265bb4b09"
+    },
+    {
+      "source": "SNP data\\2025-11-26.parquet",
+      "sha256": "677c2b3c33da09153ae3f1742f3e7de8aafb13bdc056084afc5498b13b226b30"
+    },
+    {
+      "source": "SNP data\\2025-11-28.parquet",
+      "sha256": "7cfd47ff9155569134e5874b26fc0227404adfe2083e319c2363bf4da5bfef0c"
+    },
+    {
+      "source": "SNP data\\2025-12-01.parquet",
+      "sha256": "345e60d70c146a74894fe36b6b2e746fe82e53d9fbdb5f66f01f61641399e06a"
+    },
+    {
+      "source": "SNP data\\2025-12-02.parquet",
+      "sha256": "12f0e1955a7f4f33af7e16a2d79f84cc50d1539cdea1ba412d9fe431f901c097"
+    },
+    {
+      "source": "SNP data\\2025-12-03.parquet",
+      "sha256": "8f9dc0a455eabd4be45056c6a2978828422413f15c0d2270603bd72522e2fa4a"
+    },
+    {
+      "source": "SNP data\\2025-12-04.parquet",
+      "sha256": "4a5f9965ba4d500795be6e21b38132614f1885697e5fd9fd227b23ed570b8182"
+    },
+    {
+      "source": "SNP data\\2025-12-05.parquet",
+      "sha256": "7d287f521229cd24345292c5a625a5552a4fa1f12d538b3c3546c067b85d4922"
+    },
+    {
+      "source": "SNP data\\2025-12-08.parquet",
+      "sha256": "36fb346e72c8abe613cb8b27130c0e2f72153ed18c62008beb30b2f6836e3976"
+    },
+    {
+      "source": "SNP data\\2025-12-09.parquet",
+      "sha256": "c0f7e0a632d0ea7cf1e31653b1ea37d10f491ed985614d6917a9896c0bc6b22d"
+    },
+    {
+      "source": "SNP data\\2025-12-10.parquet",
+      "sha256": "7a7f9a5f40d9c6364bbc8c819d9d1f984d97c103f536dfa0aa97f6e41e93b10c"
+    },
+    {
+      "source": "SNP data\\2025-12-11.parquet",
+      "sha256": "0d8be066b238b0c995e099876bc8161f29eb080a6427eb6f9f28b1aad4519d2f"
+    },
+    {
+      "source": "SNP data\\2025-12-12.parquet",
+      "sha256": "9745637ab5c97ea13218ec19ebd373d338f41fefe5ea1bc7fc217c5231f03a3c"
+    },
+    {
+      "source": "SNP data\\2025-12-15.parquet",
+      "sha256": "3c44b22dd626b9ae26fcf89b61dd566f0e6a6cb20dff22b67702304835af8fde"
+    },
+    {
+      "source": "SNP data\\2025-12-16.parquet",
+      "sha256": "01a828668f4e1fc9e2fb322221491c1cce530b68e19eefe7c8dddcebff1af0d1"
+    },
+    {
+      "source": "SNP data\\2025-12-17.parquet",
+      "sha256": "7fecdd08650809a4a60bd88ca263d21fbc7b2f45852cd7328c0ca47ef4f63a15"
+    },
+    {
+      "source": "SNP data\\2025-12-18.parquet",
+      "sha256": "9dc4aad44eacc8c8b3247041030cabaf5bc75ac05d7f26d4c3a2145691bf69ba"
+    },
+    {
+      "source": "SNP data\\2025-12-19.parquet",
+      "sha256": "9fb5a75a051f658f314cb63ad061b9470bc66414749fafb62354f20751b39480"
+    },
+    {
+      "source": "SNP data\\2025-12-22.parquet",
+      "sha256": "a07603e1e2c450ae8935466e29d58ff5b779df1720c724740405432bd4437d78"
+    },
+    {
+      "source": "SNP data\\2025-12-23.parquet",
+      "sha256": "e320948c93ab7cbfe262a41a97f0df57938dac3bf28de3fb3f2d0f7daae43821"
+    },
+    {
+      "source": "SNP data\\2025-12-24.parquet",
+      "sha256": "f36c0280f713d2c143fcde4c55c257a7ec8568c1b148f728f6b3f61e39732b53"
+    },
+    {
+      "source": "SNP data\\2025-12-26.parquet",
+      "sha256": "fe643b4b70414c3d9cf106919493e642d2e5f350a3474bca435cc6297c1aa0ab"
+    },
+    {
+      "source": "SNP data\\2025-12-29.parquet",
+      "sha256": "29463610a9a34212759457457ab2a1982f1cb17152502542d691664e15dcf63f"
+    },
+    {
+      "source": "SNP data\\2025-12-30.parquet",
+      "sha256": "321bd02346e8f293379b330f918e3433edfba333283b37e19825a312f3a81ab6"
+    },
+    {
+      "source": "SNP data\\2025-12-31.parquet",
+      "sha256": "dd0e36045d02bb1a1c3b763615ffd95bea79132841f41be9f701c54d841945c5"
+    },
+    {
+      "source": "SNP data\\2026-01-02.parquet",
+      "sha256": "6dbd4ba3268eee783afbaff46806a9263f7afa149b042f05b3a08a607e6e50e5"
+    },
+    {
+      "source": "SNP data\\2026-01-05.parquet",
+      "sha256": "24313cbaf51b654ae28c782bdaaaaee3c7352b5e047f644c0a2d1ec182355419"
+    },
+    {
+      "source": "SNP data\\2026-01-06.parquet",
+      "sha256": "cb2311402d8b36197e1866ebfc861182787ada1416f068cb8ac7279d807ffb80"
+    },
+    {
+      "source": "SNP data\\2026-01-07.parquet",
+      "sha256": "f67362548b948f6e8ca6cb69cbe410c28dcffe0fb8e56346711dff82e8e520e5"
+    },
+    {
+      "source": "SNP data\\2026-01-08.parquet",
+      "sha256": "e97e349a46a8e79278d4c8f279d733353803e947c9c2ced077f89af7bd22f102"
+    },
+    {
+      "source": "SNP data\\2026-01-09.parquet",
+      "sha256": "4f25dffe09994d5408870c636caa0f165f088ebad8570ab6d12eff9ce48202de"
+    },
+    {
+      "source": "SNP data\\2026-01-12.parquet",
+      "sha256": "aa60f8220bf876a36afc852da5c66020ea87f85bf78c3d145c075401bfb9c46e"
+    },
+    {
+      "source": "SNP data\\2026-01-13.parquet",
+      "sha256": "6eb0f5d09160e2552ce754986a6aba95fa742fdbf80eb38a4488b8eae4badb06"
+    },
+    {
+      "source": "SNP data\\2026-01-14.parquet",
+      "sha256": "d25bcf7e40b538fc8de2481b86a2ead5af5877018ff554f5220936d452b2a68a"
+    },
+    {
+      "source": "SNP data\\2026-01-15.parquet",
+      "sha256": "4607c26fbef6019fc63aaecd13c32eb8a4793974eb6b843819a67431eb58ce71"
+    },
+    {
+      "source": "SNP data\\2026-01-16.parquet",
+      "sha256": "4b530b250c4db0f30264c66a12e2ffe17c887ab10a2c43f56d02afb1eec000bb"
+    },
+    {
+      "source": "SNP data\\2026-01-20.parquet",
+      "sha256": "f5daf7504e36a53fb5902d7462e8365b74284bdd2bd76e816e99b2cad8386643"
+    },
+    {
+      "source": "SNP data\\2026-01-21.parquet",
+      "sha256": "6602d0f370a064d43623d7a2dabe4010eb572faed2a8cf6e8fc069bb3f790159"
+    },
+    {
+      "source": "SNP data\\2026-01-22.parquet",
+      "sha256": "d012d98af0ebe2149dfbb4705370287f55ed65105637ea60f566329c5924bbb3"
+    },
+    {
+      "source": "SNP data\\2026-01-23.parquet",
+      "sha256": "5a3e61571ab16bbee229fbb5b161bf0c8e7199f124d3b0911841a80763761ce8"
+    },
+    {
+      "source": "SNP data\\2026-01-26.parquet",
+      "sha256": "cd56836e6256b279726951e31fc10fb3726c212eb3fd16b4dad6ee95fd38f4f3"
+    },
+    {
+      "source": "SNP data\\2026-01-27.parquet",
+      "sha256": "56257abf10693b8d41f5ba57536d2c1f4a8a18e6d31b4f18b26d694468f6ee5f"
+    },
+    {
+      "source": "SNP data\\2026-01-28.parquet",
+      "sha256": "53f4bf14890dfedc0fa580204a21c809e6b8425a996f57d97d2ccae6fcba19ec"
+    },
+    {
+      "source": "SNP data\\2026-01-29.parquet",
+      "sha256": "a0e19cf201e4cb47e0fd15062a624cbb0afb0202ae6e3f6e72c9ebf11464c2d7"
+    },
+    {
+      "source": "SNP data\\2026-01-30.parquet",
+      "sha256": "9829928a4f107cb1412796fe4e75346a7969e34d3f7a983797b9715c10fc821e"
+    },
+    {
+      "source": "SNP data\\2026-02-02.parquet",
+      "sha256": "cbbf54d250870a4a08879a04b5bcae3d031d05092d4e48167cc338d52adb9985"
+    },
+    {
+      "source": "SNP data\\2026-02-03.parquet",
+      "sha256": "82aa6cfa6b7fdf5413fd4bf3c847de1700c0041ea9d3b8f16ce3a5e49926a1ab"
+    },
+    {
+      "source": "SNP data\\2026-02-04.parquet",
+      "sha256": "3ddce6483731850b633dc5e5d593459fdacc749b3c6a6fd20eee807bd47b202c"
+    },
+    {
+      "source": "SNP data\\2026-02-05.parquet",
+      "sha256": "1291d95c578881f776c365c831a1f5dece5fd62168788c314596c3b9e6944639"
+    },
+    {
+      "source": "SNP data\\2026-02-06.parquet",
+      "sha256": "3c383ff846a63308a12c0c64dd1dbe2ae0e0ef3dae7aeca10724a62c56348815"
+    },
+    {
+      "source": "SNP data\\2026-02-09.parquet",
+      "sha256": "5158502f77c56abb16d2c94383c4f0b17be58e37a84cdb9c8c10abeb977805f7"
+    },
+    {
+      "source": "SNP data\\2026-02-10.parquet",
+      "sha256": "f3b4f3556bd884b4efb80c98cbf357c2760b0c8772bd06e6cfbe2e7e3715f579"
+    },
+    {
+      "source": "SNP data\\2026-02-11.parquet",
+      "sha256": "92c6cd43761099ca9b22c9bacd58c07f47b6711b8404521164ec812f08b9f069"
+    },
+    {
+      "source": "SNP data\\2026-02-12.parquet",
+      "sha256": "7c3c9579139c2e218119cb88c7fff9cdae586e35a841b004a720f7a9f3b6c09d"
+    },
+    {
+      "source": "SNP data\\2026-02-13.parquet",
+      "sha256": "47d491e6629e80b9054a7fa3a5d10c5b4d6497e93c330180afaed70ca61bfcff"
+    },
+    {
+      "source": "SNP data\\2026-02-17.parquet",
+      "sha256": "250640cd97edd98adcf19efa2838664476b01e6ec289e16a64b3aa6316e3862d"
+    },
+    {
+      "source": "SNP data\\2026-02-18.parquet",
+      "sha256": "f2731d88211d26bb0bd5512ff82afb21bc20ef971b16dae2ddf701a214c607c9"
+    },
+    {
+      "source": "SNP data\\2026-02-19.parquet",
+      "sha256": "1696a63414b0b1a3ed6963a0bacf32d090ddf1cff2847e98be550be5d57c7d4e"
+    },
+    {
+      "source": "SNP data\\2026-02-20.parquet",
+      "sha256": "87a6e00801c258bd49d30e1240e1c62cc542b1bb15ae50fb5869152f643b0aa9"
+    },
+    {
+      "source": "SNP data\\2026-02-23.parquet",
+      "sha256": "b558fd44949126d128233f7a8dc2c66917c0a37fc6fd175bcbab23e77897c805"
+    },
+    {
+      "source": "SNP data\\2026-02-24.parquet",
+      "sha256": "aa2a707472a11dfabd035f551521d5fe107ad5b632631672b02091bcbe7dd4bf"
+    },
+    {
+      "source": "SNP data\\2026-02-25.parquet",
+      "sha256": "07340e21345e19932a46b355c29ff6aeb11447e494b694a675bc3d94c203cc39"
+    },
+    {
+      "source": "SNP data\\2026-02-26.parquet",
+      "sha256": "efe5c7d72eab4b0bef5904458ec42f1abb384c6f1d3f24694e08b351071b1371"
+    },
+    {
+      "source": "SNP data\\2026-02-27.parquet",
+      "sha256": "d06a6480450f063087cb5b97e9a9f712269da54e89bdd6841da4a3441957d43d"
+    },
+    {
+      "source": "SNP data\\2026-03-02.parquet",
+      "sha256": "0cbaeb0abf8b8992a218bda37d5e7769a1bb766f999b70e85ccdb7673550f71d"
+    },
+    {
+      "source": "SNP data\\2026-03-03.parquet",
+      "sha256": "3ce7e5449ffdf87b257a52f219cfa06772d4eb2530c3aa624b26dcad3a093ca6"
+    },
+    {
+      "source": "SNP data\\2026-03-04.parquet",
+      "sha256": "cc7ed72c3ca0bb4ad66cc73f6611c4a69f7ca9b724dbc13af182f06617a6d2d6"
+    },
+    {
+      "source": "SNP data\\2026-03-05.parquet",
+      "sha256": "590a58aac548989945958381818bfe4666b510c31bdb9cca1f61c42fd14f3477"
+    },
+    {
+      "source": "SNP data\\2026-03-06.parquet",
+      "sha256": "2056a88e4df98790c1b2f4259ffc966ad60e4cb3360437835fe4fb70e5ac6e12"
+    },
+    {
+      "source": "SNP data\\2026-03-09.parquet",
+      "sha256": "0df50e125d57015e88eb6c4129f317b7e5548bc2418f6e8030f3ed799d5d0799"
+    },
+    {
+      "source": "SNP data\\2026-03-10.parquet",
+      "sha256": "6500ffb5c64882cf083e3ac0dc122691dc888a7a81fc8c2d8dcb9eb4f2e8171f"
+    },
+    {
+      "source": "SNP data\\2026-03-11.parquet",
+      "sha256": "a138cd9571b517f1d769daca42e756e04f46607c2cfa58afe9f0d094bcb175a6"
+    },
+    {
+      "source": "SNP data\\2026-03-12.parquet",
+      "sha256": "1eee3b13aa40077ad3181d8f55a9dc8205f3163aaa6a1025f8c90b18073322c8"
+    },
+    {
+      "source": "SNP data\\2026-03-13.parquet",
+      "sha256": "b406713cc14522a27080b2eec31b4d7312ff2bb6bcba522ee48612f3a59084af"
+    },
+    {
+      "source": "SNP data\\2026-03-16.parquet",
+      "sha256": "7420216a7d13c844ddd80555b3458458768a01e4177d2bf706ff04d553849d78"
+    },
+    {
+      "source": "SNP data\\2026-03-17.parquet",
+      "sha256": "ddc791e02dd556825398d875388fb934b31a718663a5e0bbfa0ad088c924b464"
+    },
+    {
+      "source": "SNP data\\2026-03-18.parquet",
+      "sha256": "94788f312afa6e3807b09ac677ea1aa0f9c8646e98d6fe6ac123008448087748"
+    },
+    {
+      "source": "SNP data\\2026-03-19.parquet",
+      "sha256": "4f539c6c6ec1fd2295c560676c18da559a75d8f3abaa07e52de075bb55401cab"
+    },
+    {
+      "source": "SNP data\\2026-03-20.parquet",
+      "sha256": "3d9daf03beb7009a12ce61a6ef0f130064286f351d2731ffe43e30f334656fc7"
+    },
+    {
+      "source": "SNP data\\2026-03-23.parquet",
+      "sha256": "cadd4202c604e9d4c172222e7a27b47050151e4fa63a67e6f8b733a45ad07eca"
+    },
+    {
+      "source": "SNP data\\2026-03-24.parquet",
+      "sha256": "b31ba55b06d2a3199ab9a701efc26cce3502eeae7d29a2bb5d3bebcf0b5f2072"
+    },
+    {
+      "source": "SNP data\\2026-03-25.parquet",
+      "sha256": "a2281a6492d759c3858463be7114b69acc271a37cba647379e138d10b1365ea9"
+    },
+    {
+      "source": "SNP data\\2026-03-26.parquet",
+      "sha256": "1495212ff9ee6304e906c85367cf000abdb0bb97fb7a16cd1f29653dee6b3bd8"
+    },
+    {
+      "source": "SNP data\\2026-03-27.parquet",
+      "sha256": "33927dd6f0ad7a9d30e8dabed0aa1fb9caf774608cb2b9f5009d71e166e13778"
+    },
+    {
+      "source": "SNP data\\2026-03-30.parquet",
+      "sha256": "4b405be7e8303aaece9aaaf575524ab057ae452c153aa06f19e85cc0a7c3a47f"
+    },
+    {
+      "source": "SNP data\\2026-03-31.parquet",
+      "sha256": "739349675c201cb9b87c1a407919e25193b6125053f154b4186b51a5b600d05e"
+    },
+    {
+      "source": "SNP data\\2026-04-01.parquet",
+      "sha256": "4d857ea75a735a259f88a1986b646e855ee1d62f82019906328bc5192d70452a"
+    },
+    {
+      "source": "SNP data\\2026-04-02.parquet",
+      "sha256": "2613e91d7e537988ca5e1c2d7109294afd086d96f0048eb197f807f7b4989efa"
+    },
+    {
+      "source": "SNP data\\2026-04-06.parquet",
+      "sha256": "f1b889db4973790c860c67adefcae469425c8b624999b14d7a43aeba933b7890"
+    },
+    {
+      "source": "SNP data\\2026-04-07.parquet",
+      "sha256": "444193324332650ad4b34bb67d0fb8b27b3e546a3494a266590de31b646e95ec"
+    },
+    {
+      "source": "SNP data\\2026-04-08.parquet",
+      "sha256": "ee42ae949f09521d574381fc557b3ac6f686d0424eaa6c931c7b3fb632564db0"
+    },
+    {
+      "source": "SNP data\\2026-04-09.parquet",
+      "sha256": "7a5327b041aaacb7fd60c9d2bd3c6ea3e671a52b005c1dfd35f76e553d38eb5e"
+    },
+    {
+      "source": "SNP data\\2026-04-10.parquet",
+      "sha256": "a1129d059a567f81e3817be7c750eb0e1e0bf85552fa09f4b5b1c5a2a2c7b5eb"
+    },
+    {
+      "source": "SNP data\\2026-04-13.parquet",
+      "sha256": "0bbfe8500279d72e470f25d76b622e197f3a6b9b2a0570ec494d1d9cd8cf753b"
+    },
+    {
+      "source": "SNP data\\2026-04-14.parquet",
+      "sha256": "7eb7fd12cfb35d3806455bf5c24dfb521a40b146dde65d97be978673c0ae7a57"
+    },
+    {
+      "source": "SNP data\\2026-04-15.parquet",
+      "sha256": "1d0f572139ce2173af98c2fcb7bdbe7ab5c6d2415613a96394661439756f7459"
+    },
+    {
+      "source": "SNP data\\2026-04-16.parquet",
+      "sha256": "71f37b37643ee861685124249dbcb4d44b7bea0f68d35a5f2dc65cacb50bb9fe"
+    },
+    {
+      "source": "SNP data\\2026-04-17.parquet",
+      "sha256": "8ddbfa063b5d78127ee851ba8226005d4f4050f3c0323856a18bc2d7d2d07731"
+    },
+    {
+      "source": "SNP data\\2026-04-20.parquet",
+      "sha256": "937adb83a6366591e347b1f062bc63d91dd71dafa20902f4ec311e06f3d30917"
+    },
+    {
+      "source": "SNP data\\2026-04-21.parquet",
+      "sha256": "b848f1a047bb41694d663781854934d8976fd803b5287f246d56dccf1b445010"
+    },
+    {
+      "source": "SNP data\\2026-04-22.parquet",
+      "sha256": "a73caf9a87799a268b45f07eff6df3485046b70d6c5f0b1aacc29f3ed386c471"
+    },
+    {
+      "source": "SNP data\\2026-04-23.parquet",
+      "sha256": "003b870df2080e834697dd503b854d7b978af7f1b7dc49c53fa370f562289ae4"
+    },
+    {
+      "source": "SNP data\\2026-04-24.parquet",
+      "sha256": "a198f747712373389d7f01dc12d8762b5c7fc0320dd7153816e7ec067cba4a92"
+    },
+    {
+      "source": "SNP data\\2026-04-27.parquet",
+      "sha256": "260a8cfe1bf4a9c430f4ec9ae5dc86ba7f566e114a53bd3a6b103cc7852c3583"
+    },
+    {
+      "source": "SNP data\\2026-04-28.parquet",
+      "sha256": "03c9bf7f631e6924629f47d84ef25e5aa65ff38a319f5d74e3c666fddd1edb96"
+    },
+    {
+      "source": "SNP data\\2026-04-29.parquet",
+      "sha256": "32e027104f1b39ac12300da7402989e5dc1a4279ff67f517c1a4090da31d5c86"
+    },
+    {
+      "source": "SNP data\\2026-04-30.parquet",
+      "sha256": "e9c1048c15b05c4d9f09a3ab52eb657d0f299d7f1282a8e283f449a702784e68"
+    },
+    {
+      "source": "SNP data\\2026-05-01.parquet",
+      "sha256": "a112661cbb9c98069729968a91c9b6d67c8ca0da4dba60ab683ddef0c30994d5"
+    },
+    {
+      "source": "SNP data\\2026-05-04.parquet",
+      "sha256": "8bbfdc177171f923b02d64a1b116847e4387a2e2fdf2efa938654126f9309616"
+    },
+    {
+      "source": "SNP data\\2026-05-05.parquet",
+      "sha256": "6264b645324e83dcb012890be95fd875045630ba42b4fef260b991397bb6aeb7"
+    },
+    {
+      "source": "SNP data\\2026-05-06.parquet",
+      "sha256": "b66660ca9619240bef59a2aaddbbccff6b4033f67e4bb81782138c1a3924de87"
+    },
+    {
+      "source": "SNP data\\2026-05-07.parquet",
+      "sha256": "7995eaa893a6d898673f6310ada30e6abf13f0f511a6f7a5dbc4401eb72045cc"
+    },
+    {
+      "source": "SNP data\\2026-05-08.parquet",
+      "sha256": "14c8506b596c305d867107bc55dd7d7b9dfbdb37be537778e7bdde23e453177e"
+    },
+    {
+      "source": "SNP data\\2026-05-11.parquet",
+      "sha256": "ce0527855f4e8bafaa3e714d897345e546db7cfc6d4fdd77a7ca0f9a759a733a"
+    },
+    {
+      "source": "SNP data\\2026-05-12.parquet",
+      "sha256": "874e423147a312ddc4a698f0eafd606972bc0b8c0941c2774ba6c19d9216a32a"
+    },
+    {
+      "source": "SNP data\\2026-05-13.parquet",
+      "sha256": "193231965617617fa161ac3e2eb1d7b0cad61d55e9b4752d7a67350db72abf49"
+    },
+    {
+      "source": "SNP data\\2026-05-14.parquet",
+      "sha256": "370d0577d2d205da12f1f129cf9417d788782a5e373f9419b29b4c502753970c"
+    },
+    {
+      "source": "SNP data\\2026-05-15.parquet",
+      "sha256": "56250263e2a91aedaacb78bcb6cfdb18f034bd14f8862a6b6eea616fc25482ea"
+    },
+    {
+      "source": "SNP data\\2026-05-18.parquet",
+      "sha256": "be2256b9c31452d74fbfeabccbe4fbe3a5edb3f3ce540a9bb5a95f143af25085"
+    },
+    {
+      "source": "SNP data\\2026-05-19.parquet",
+      "sha256": "556f06439c49e322a39b9d933832d537647e642a3b165fc293d4269bcf555253"
+    },
+    {
+      "source": "SNP data\\2026-05-20.parquet",
+      "sha256": "580de104f57f1281e404cda455c442131428df1d82ae6e7eba08aa8fa903246c"
+    },
+    {
+      "source": "SNP data\\2026-05-21.parquet",
+      "sha256": "71b7106b35f17ee0129e27aa8b273c6e3c739e659b035245ada6ea8f2efacfc0"
+    },
+    {
+      "source": "SNP data\\2026-05-22.parquet",
+      "sha256": "db866463b959fafa560824b1c4cdbe2991a68b36206ed2dba52074e4059ad9d5"
+    },
+    {
+      "source": "SNP data\\2026-05-26.parquet",
+      "sha256": "a5ea724740a36b439b3f85194b127267f8d01c607fec4a514768187cc8b14eeb"
+    },
+    {
+      "source": "SNP data\\2026-05-27.parquet",
+      "sha256": "e4f51b1f17bbc7ea2aaf89ae1fbb1087c7dd4f645fa67f18d04c8c4c9dbe952e"
+    },
+    {
+      "source": "SNP data\\2026-05-28.parquet",
+      "sha256": "8323e133e7b67fb7dab421fdd456b432e2bd327c4f1274b69a69197179793b6a"
+    },
+    {
+      "source": "SNP data\\2026-05-29.parquet",
+      "sha256": "6d725e48353f8cacc459049ed364e1ea735edb287f007d6825baa19a18fbd0e3"
+    },
+    {
+      "source": "SNP data\\2026-06-01.parquet",
+      "sha256": "3c64e0391376034a610dcb614a2c8dcb158894a304b5f66bd66f2c7ae55986ab"
+    },
+    {
+      "source": "SNP data\\2026-06-02.parquet",
+      "sha256": "fde7710557659315c8ce86ac9a12de61509fcd893db534d0b7ada6f8c0732ff2"
+    },
+    {
+      "source": "SNP data\\2026-06-03.parquet",
+      "sha256": "eeca315e0c9b8775ffcd14f1c0b4343bc1348dc4f11bb67bafd1532a35065ec4"
+    },
+    {
+      "source": "SNP data\\2026-06-04.parquet",
+      "sha256": "bff44613d2da49fd493f29e8dc7c86d9173261b5bf44233c164a086297f2c52d"
+    },
+    {
+      "source": "SNP data\\2026-06-05.parquet",
+      "sha256": "feb33f327f002e7864480c6ced6ee4b60ffaae9ddb2cbc575f1826ab18c6640f"
+    },
+    {
+      "source": "SNP data\\2026-06-08.parquet",
+      "sha256": "57ceac2409a908b8b70182ed168c0bd59a2f24c34d80adfb823f541db6f2c8df"
+    },
+    {
+      "source": "SNP data\\2026-06-09.parquet",
+      "sha256": "fb1ada4925faade7626d6552e323e6c085de1b5d0e91737b8a2ba957ad8b466c"
+    },
+    {
+      "source": "SNP data\\2026-06-10.parquet",
+      "sha256": "a4c9ef6fd7d4ea45e4dcd9fb82b4365b6caceeb5c65c78deb745e5659dd93ac6"
+    },
+    {
+      "source": "SNP data\\2026-06-11.parquet",
+      "sha256": "4cda94379545ed1ebd360e203d61379afdba4fc1cc934310d001ceab4bbbf9bc"
+    },
+    {
+      "source": "SNP data\\2026-06-12.parquet",
+      "sha256": "bfebfa209f4d1bbad7d5b314300fba8c9102a52a3f8c3f69d6f83ee1ccf36517"
+    },
+    {
+      "source": "SNP data\\2026-06-15.parquet",
+      "sha256": "a584b7c083f626dec28ccba562fe89cd0040c67911e0c9ea62692fd72e18e5e7"
+    },
+    {
+      "source": "SNP data\\2026-06-17.parquet",
+      "sha256": "ca3988ee62643b229111f1315f9efcbb99e1e545295b80d20275723d386f2a46"
+    },
+    {
+      "source": "SNP data\\2026-06-18.parquet",
+      "sha256": "fa78b9dd7c75e2a6bfede4c5560eaf8554b83605d0679d8dfa5b9cfa3b817e36"
+    },
+    {
+      "source": "SNP data\\2026-06-22.parquet",
+      "sha256": "953dba4cbaf9f0be20216c6eccb3d3119263cee5f2180e556c801ea6cf25b727"
+    },
+    {
+      "source": "SNP data\\2026-06-23.parquet",
+      "sha256": "057a18bd8f5b0c136031dc1c6a7bc36136024973e67d4fc65d6387d13467f103"
+    },
+    {
+      "source": "SNP data\\2026-06-24.parquet",
+      "sha256": "39a20a3ffa5da1dc98bbce7d3bc7fffa9cf8d95d6ae67bebbd4731c6fa64ad01"
+    },
+    {
+      "source": "SNP data\\2026-06-25.parquet",
+      "sha256": "3fc73a06c89866b37dc5942ac8b837ad8c371d9d399c85822f4715ecac49a7b5"
+    },
+    {
+      "source": "SNP data\\2026-06-26.parquet",
+      "sha256": "46244a2410a0c2cca12f3b6d59d1393a437e0b98a4aaa7768ee054691171c96f"
+    },
+    {
+      "source": "SNP data\\2026-06-29.parquet",
+      "sha256": "009e9278ef540d717264044410fb79c3b7a0620a51673b3bf10778603be67352"
+    },
+    {
+      "source": "SNP data\\2026-06-30.parquet",
+      "sha256": "a8dafa7f0ae2d00529147b34bd6108ebbf0532ef0e2193d0ecb4037791b2e6a0"
+    },
+    {
+      "source": "SNP data\\2026-07-01.parquet",
+      "sha256": "9893b3a8c0f7a5ba3654c95134e952e237f7b8628dbc0f6a9135edb0798debf2"
+    },
+    {
+      "source": "SNP data\\2026-07-02.parquet",
+      "sha256": "456c13e29af0cc557b6ca9004ea5c6068a1241a02f1dfa8570198b5e69ee9fb3"
+    },
+    {
+      "source": "SNP data\\2026-07-06.parquet",
+      "sha256": "281108a2a13045dbfce71f3fada2f51058e418cb2199bbeb438b14d00e53f386"
+    },
+    {
+      "source": "SNP data\\2026-07-07.parquet",
+      "sha256": "fe8e17fa939929f7947f147828cc474ef1631acdf0d029a1d916e3aee2cbc704"
+    },
+    {
+      "source": "SNP data\\2026-07-08.parquet",
+      "sha256": "89f5e2e2883409cedcb40fdc9bb7600e5ebd486e326307c4abc96a975fa95ce1"
+    },
+    {
+      "source": "SNP data\\2026-07-09.parquet",
+      "sha256": "917d5ea54f67f9eff9495c90e19f30d6f32b4e8b614a67ecdc7793f62c9d86d9"
+    },
+    {
+      "source": "SNP data\\2026-07-10.parquet",
+      "sha256": "377aff6758441395cd3d4dd7a3de7d767d425a6bc07ae4913ea5383d609fd8ff"
+    },
+    {
+      "source": "SNP data\\2026-07-13.parquet",
+      "sha256": "9b4e8af38a60ebe89009561c17378b59a79bcea857b41d4d586969a8c53e1124"
+    },
+    {
+      "source": "SNP data\\2026-07-14.parquet",
+      "sha256": "b90eaf53110cc04a62b3344ff1b0ae22ceaef08c2fe5a5b07a6691cbd62a0a53"
+    },
+    {
+      "source": "SNP data\\2026-07-15.parquet",
+      "sha256": "719e003d0d6f51062f79981c557bef0a9ee4b461c638255780b0888796efd23f"
+    },
+    {
+      "source": "SNP data\\2026-07-16.parquet",
+      "sha256": "7ecf75c424488558bb587b5e69d49494a60820df660a1804a6c9016eebe5c0bf"
+    },
+    {
+      "source": "SNP data\\2026-07-17.parquet",
+      "sha256": "ae2a41bcc48fd17c74ade0978a3dcab04d88fbcc54f4baea5ba5a037f72e5b02"
+    },
+    {
+      "source": "SNP data\\2026-07-20.parquet",
+      "sha256": "7c2cea5de148ba7b92fb239c4ad69cb345552e5a28670919f0be31c4ccdca024"
+    },
+    {
+      "source": "SNP data\\2026-07-21.parquet",
+      "sha256": "28f581e50dd679f81f71541be190f9f44395669e739f19de0827ee65eb788bd0"
+    },
+    {
+      "source": "SNP data\\2026-07-22.parquet",
+      "sha256": "d69f565cc5afa8f4c91ebeddd7ea17a612acbcc1768b04998fa738da25e98277"
+    },
+    {
+      "source": "SNP data\\2026-07-23.parquet",
+      "sha256": "a964001c2c7c04711ed5ec11e9a8d72f378515ed3d27e0388c21f7e3efc6a209"
+    },
+    {
+      "source": "SNP data\\2026-07-24.parquet",
+      "sha256": "f89babf200834e1b6efe5a19e21bb64b9ac528b1b9cd789027d5c152b33ed1bb"
+    },
+    {
+      "source": "SNP data\\2026-07-27.parquet",
+      "sha256": "f2964ff05bb93b16e4705eb42bfc16e52660a66496a20695ccca34d4bbd0fdca"
+    },
+    {
+      "source": "SNP data\\2026-07-28.parquet",
+      "sha256": "877696bfbef38d8ce08a2a8d0e6c1ec05d0dddd3b94fb0b3266ac19a2ffd4653"
+    },
+    {
+      "source": "SNP data\\2026-07-29.parquet",
+      "sha256": "63d1e73c921e765bdc168040212832d3ed0390b2ea8bc57a1ce28bd4ff3c9f07"
+    },
+    {
+      "source": "SNP data\\2026-07-30.parquet",
+      "sha256": "30d94d93e5d3491e66b94189e1c24d305b634811865f9df96e0b3568c088e80e"
+    },
+    {
+      "source": "SNP data\\2026-07-31.parquet",
+      "sha256": "7ff522ee6bd8b0448541579d41540e8a63526116048be47dd2946b0467795e14"
+    },
+    {
+      "source": "SNP data\\2026-08-03.parquet",
+      "sha256": "778346dde283121d2bc0906d9dd1c1779c5ee88dee62c99c4dc31d6e36a74c33"
+    },
+    {
+      "source": "SNP data\\2026-08-04.parquet",
+      "sha256": "f33764fd009fb831e0de861963ff149e1056030d39e7b07f6bca82b63f02cb09"
+    },
+    {
+      "source": "SNP data\\2026-08-05.parquet",
+      "sha256": "1c87ba19dfdde1ffc02e8fef4f9da0318e4a79f3557ddcd5dd65cfeca1f5afdf"
+    },
+    {
+      "source": "SNP data\\2026-08-06.parquet",
+      "sha256": "c3840c260fe870c3b6ab337eab89c8e2c64ffdf9a077025e0d6b0303222fef3d"
+    },
+    {
+      "source": "SNP data\\2026-08-10.parquet",
+      "sha256": "c4684001c7f19b9cbaafef2b7e83b503b1bf8e4007fbf2de6c189203e4bd3b14"
+    },
+    {
+      "source": "SNP data\\2026-08-11.parquet",
+      "sha256": "b5862a6ad7344fdaf715ecd2b80cbe242c34cdb7c08e3fcadc03022d99b709e3"
+    },
+    {
+      "source": "SNP data\\2026-08-12.parquet",
+      "sha256": "ba1a6b9435972f67a7a3044d3279f0155ae9b22820ff44ef1a3c87352d307763"
+    },
+    {
+      "source": "SNP data\\2026-08-13.parquet",
+      "sha256": "71fd448866826449ca86c068b92b6409bf1cd3d1f1fb832b534a5e72c318ca4c"
+    },
+    {
+      "source": "SNP data\\2026-08-14.parquet",
+      "sha256": "3f4198ecc9f6cef0d5c0ccf79ea3452fac8045311ac19bb7087fd0387a7a9afe"
+    },
+    {
+      "source": "SNP data\\2026-08-17.parquet",
+      "sha256": "3852fd3a6ca24eb0cfb7147789ddb2f2b4dc9cd8714295093e95acd0a2212bf2"
+    },
+    {
+      "source": "SNP data\\2026-08-18.parquet",
+      "sha256": "666822aaa77a0c645da3c357044e178ac596419fd689bd7bdd0f23ee77f4eec6"
+    },
+    {
+      "source": "SNP data\\2026-08-19.parquet",
+      "sha256": "567943a033dcfafbcd16442b9cd25d25e0a809bbec3e1c9459bce2531d15e2a8"
+    },
+    {
+      "source": "SNP data\\2026-08-20.parquet",
+      "sha256": "43e857d2da102147318d2835c333a63e58c818050de913f0db75fe92b751e472"
+    },
+    {
+      "source": "SNP data\\2026-08-21.parquet",
+      "sha256": "1fbb3d9eba9a7aece6c061209af694a6a6cabd9c2bc4a9058204f81a65cb0ad1"
+    },
+    {
+      "source": "SNP data\\2026-08-24.parquet",
+      "sha256": "eae4fea7c91b60d74233c46ade9119d5cf0cff2c6b1874729645390243da39a8"
+    },
+    {
+      "source": "SNP data\\2026-08-25.parquet",
+      "sha256": "920fc8d6e584ec2dab3f23fb4aefda872cdc6af2783d529a9e4a41b4c99794ec"
+    },
+    {
+      "source": "SNP data\\2026-08-26.parquet",
+      "sha256": "ae2c3b319b79accd6085cc9689e5da8f9f2fb6d91770cfb45c169e280a0963aa"
+    },
+    {
+      "source": "SNP data\\2026-08-27.parquet",
+      "sha256": "d5b589322431aaec97ba75a21115dc6600070164bc7b7a0f50d652bdede08f14"
+    },
+    {
+      "source": "SNP data\\2026-08-28.parquet",
+      "sha256": "734bd72e2a73dd5cf589a074b84ad36102e276f9229e3bfc594c777343ffc8ff"
+    },
+    {
+      "source": "SNP data\\2026-08-31.parquet",
+      "sha256": "dbcb7ab9ce88cf97a72f6add048eb7ec639c56cd489d6f70f3426cd5ee655d40"
+    },
+    {
+      "source": "SNP data\\2026-09-01.parquet",
+      "sha256": "b46fd0d7efe7f4b5449dda5d277f7387ad1513fefa1cd00fd60b7c0e295a621f"
+    },
+    {
+      "source": "SNP data\\2026-09-02.parquet",
+      "sha256": "7419f41f2013581407f26db43e62b6a12ad6e56dbfe653f5c82c65f7f4879eb2"
+    },
+    {
+      "source": "SNP data\\2026-09-03.parquet",
+      "sha256": "a9a2caa81c110c9203f8e92bb8b25dc2ed1b792d32a5a8e77ba87fd151264f99"
+    },
+    {
+      "source": "SNP data\\2026-09-04.parquet",
+      "sha256": "ec97a4aea826f1d7994de3d20b0613f2d562620dea4b577b80fca7c843413a88"
+    },
+    {
+      "source": "SNP data\\2026-09-08.parquet",
+      "sha256": "b710393800f35537837ba90d413f760547753823bbd3f62f80b41ef84c12bdb0"
+    },
+    {
+      "source": "SNP data\\2026-09-09.parquet",
+      "sha256": "b068217b7bc06339d7b202195484a8fd1725b91a7550ce4338705240fdb131d2"
+    },
+    {
+      "source": "SNP data\\2026-09-10.parquet",
+      "sha256": "6bc40535c7cd45d5e6ed4ce51cba6fd4c95e25d60781f939d4b6873760536b69"
+    },
+    {
+      "source": "SNP data\\2026-09-11.parquet",
+      "sha256": "4d0527ebe7cc7d8a7cba7541bb8e864590d3aad5b772f7f2d2e75090201714c0"
+    },
+    {
+      "source": "SNP data\\2026-09-14.parquet",
+      "sha256": "e00701ec1f72989afc84778cc1a80c103f466078f5696248554338f7ec867bfc"
+    },
+    {
+      "source": "SNP data\\2026-09-15.parquet",
+      "sha256": "a57fbcd74e1dd88d0904034502f4a1e2ba5e56e84dc31692e3f07cef9cd54c96"
+    },
+    {
+      "source": "SNP data\\2026-09-16.parquet",
+      "sha256": "b91849123821ba39ff9ea2fd4262dea3517a9dd0523680385b2f0783b4f8471b"
+    },
+    {
+      "source": "SNP data\\2026-09-17.parquet",
+      "sha256": "1cdecfed867905bb17aa27f912326daacd2cf32371254be6d45138be346adda4"
+    },
+    {
+      "source": "SNP data\\2026-09-18.parquet",
+      "sha256": "9be1f29d2e10382daae8137af8f0699b8e3feadbef4e1750806149e1b8293fad"
+    },
+    {
+      "source": "SNP data\\2026-09-21.parquet",
+      "sha256": "e8bac38e97ffb8f8954122ed80e3f48a2630b12ad2cf52db1a4f9d74ca30fab8"
+    },
+    {
+      "source": "SNP data\\2026-09-22.parquet",
+      "sha256": "1e81531aa01fa15ab0f652efa36677b7e0b5e808ba13e89d6b5760794e387b83"
+    }
+  ]
+}

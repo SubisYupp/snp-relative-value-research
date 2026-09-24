@@ -1,0 +1,17 @@
+.deps/
+.venv/
+.tools/
+__pycache__/
+.pytest_cache/
+node_modules/
+.next/
+SNP data/
+data/processed/
+data/processed-v1.1/
+models/
+experiments/
+deploy/
+results/
+dashboard/public/data/
+*.log
+*.tsbuildinfo
